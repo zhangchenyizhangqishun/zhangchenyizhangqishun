@@ -1,0 +1,7 @@
+a.extend(b)将b的列表内容添加道a里
+a.reverse()  将列表内容倒过来排序
+亭亭
+薇薇
+张晓
+a.sort()：对列表内容进行排序
+a.count("XXX")：查XXX的存在个数

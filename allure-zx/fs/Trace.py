@@ -3,6 +3,7 @@
 '''
 Created on June 01, 2019
 @author: hzhuangfg
+di san ci xiugai
 '''
 
 import sys
@@ -20,7 +21,7 @@ TRACE_FILE_NAME = "trace.%s.log"%(str(datetime.datetime.now().strftime('%Y-%m-%d
 
 print "os.getcwd() = %s" %os.getcwd()
 print "os.path.dirname(__file__) = %s" %os.path.dirname(__file__)
-print "_log_dir = %s" %_log_dir
+print "_log_dir = %s" % _log_dir
 
 _log_path=os.path.join(_log_dir, '..//logs')
 if not os.path.exists(os.path.normpath(_log_path)):

@@ -66,7 +66,7 @@ class Log:
                     print("GGG", handle.baseFilename, logpath)
 
             if False == b_exist:
-                if os.path.exists(os.path.dirname(logpath)) :
+                if os.path.exists(os.path.dirname(logpath)):
                     #self.handle = logging.FileHandler(logpath) #, mode="w+"
                     self.handle = RotatingFileHandler(logpath, LOG_MODE, LOG_MAX_SIZE, LOG_MAX_FILES)
                     self.logger.addHandler(self.handle)
@@ -181,7 +181,7 @@ class Log:
     def setLevel(self, level):
         try:
             #check parameters
-            level_dict={0:"NOSET", 10:"DEBUG", 20:"INFO", 30:"WARNNING", 40:"ERROR", 50:"CRITICAL"}
+            level_dict={0: "NOSET", 10: "DEBUG", 20: "INFO", 30: "WARNNING", 40: "ERROR", 50: "CRITICAL"}
             if level not in level_dict:
                 raise Exception("error input, level must be %s" %("0 | 10 | 20 | 30 | 40 | 50"))
             

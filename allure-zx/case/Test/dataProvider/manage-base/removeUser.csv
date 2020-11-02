@@ -1,0 +1,5 @@
+caseId,desc,isRun,account,password,userId,expectedMessage
+1001,删除用户：（接口未做校验删除之后用户可以被删除）,True,test_huangfg,123456,173,None
+1002,删除用户：id不允许为空,True,test_huangfg,123456,"",参数错误
+1003,删除用户：（接口未做校验用户id不存在）,True,test_huangfg,123456,999999,None
+1004,删除用户：正常删除用户,True,test_huangfg,123456,172,None

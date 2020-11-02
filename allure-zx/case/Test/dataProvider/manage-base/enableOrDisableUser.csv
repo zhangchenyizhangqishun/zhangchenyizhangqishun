@@ -1,0 +1,10 @@
+caseId,desc,isRun,account,password,userId,status,expectedMessage
+1001,启用用户：（接口未做校验删除之后用户可以被删除）,True,test_huangfg,123456,173,True,None
+1002,启用用户：id不允许为空,True,test_huangfg,123456,"",False,参数错误：id不允许为空
+1003,禁用用户：id不允许为空,True,test_huangfg,123456,"",True,参数错误：id不允许为空
+1004,启用禁用用户：status不允许为空,True,test_huangfg,123456,173,"",参数错误：status不允许为空
+1005,禁用用户：（接口未做校验删除之后用户可以被禁用）,True,test_huangfg,123456,173,False,None
+1006,禁用用户：（接口未做校验重复禁用）,True,test_huangfg,123456,172,False,None
+1007,启用用户：（接口未做校验重复启用）,True,test_huangfg,123456,172,True,None
+1008,启用用户失败：（接口未做校验用户id不存在）,True,test_huangfg,123456,999999,True,None
+1009,禁用用户失败：（接口未做校验用户id不存在）,True,test_huangfg,123456,999999,False,None

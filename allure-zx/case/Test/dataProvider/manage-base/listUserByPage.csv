@@ -1,0 +1,6 @@
+caseId,desc,isRun,account,password,labelList,roleName,status,groupParam,expectedMessage
+1001,查询用户列表：精确查询,True,test_huangfg,123456,"['晶日','信息文控管理体系中心']",二级角色,True,wenkong,None
+1002,查询用户列表：根据角色查询,True,test_huangfg,123456,"",二级角色,"",,None
+1003,查询用户列表：根据状态查询,True,test_huangfg,123456,"","",True,,None
+1004,查询用户列表：根据姓名查询,True,test_huangfg,123456,"","","",wenkong,None
+1001,查询用户列表：精确查询,True,test_huangfg,123456,['晶日'],"","","",None

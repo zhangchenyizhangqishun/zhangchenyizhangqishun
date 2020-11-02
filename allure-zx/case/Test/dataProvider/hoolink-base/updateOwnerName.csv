@@ -1,0 +1,11 @@
+caseId,desc,isRun,account,password,customerNo,projectId,ownerName,ownerPhone,expectedMessage
+1001,修改项目责任人失败：负责人为空,True,huangfg,888888,1001,788,"",random,参数错误：负责人不能为空
+1002,修改项目责任人失败：手机号为空,True,huangfg,888888,1001,788,random,"",手机号不能为空
+1003,修改项目责任人成功：random代表随机账号,True,huangfg,888888,1001,788,random,random,None
+1004,修改项目责任人失败：手机号格式错误,True,huangfg,888888,1001,788,random,56987456230,参数错误：手机号格式错误
+1005,修改项目责任人失败：负责人长度17,True,huangfg,888888,1001,788,teste_13568974123,random,参数错误：负责人长度最大16
+1006,"修改项目责任人失败：手机号格式错误,负责人长度最大16",True,huangfg,888888,1001,788,random,139874562301,参数错误：手机号格式错误
+1007,修改项目责任人失败：负责人最小长度,True,huangfg,888888,1001,788,1,random,None
+1008,修改项目责任人失败：项目id不存在,True,huangfg,888888,1001,999999,random,random,修改负责人异常
+1009,修改项目责任人失败：项目id不属于登录用户（接口未做校验）,True,huangfg,888888,1001,262,random,random,项目状态失效，无法操作！
+1010,修改项目责任人失败：项目状态失效,True,huangfg,888888,1001,786,random,random,项目状态失效，无法操作！

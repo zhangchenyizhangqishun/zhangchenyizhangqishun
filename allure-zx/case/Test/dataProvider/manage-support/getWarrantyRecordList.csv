@@ -1,0 +1,8 @@
+caseId,desc,isRun,account,password,companyName,projectName,expectedMessage
+1001,查询设备延保记录列表：根据公司名称精确查询,True,test_huangfg,123456,alibaba,"",None
+1002,查询设备延保记录列表：根据公司名称模糊查询,True,test_huangfg,123456,ali,"",None
+1003,查询设备延保记录列表：根据项目名称精确查询,True,test_huangfg,123456,"",下雨天小镇,None
+1004,查询设备延保记录列表：根据项目名称模糊查询,True,test_huangfg,123456,"",下雨天,None
+1005,查询设备延保记录列表：根据公司名称和项目名称精确查询,True,test_huangfg,123456,alibaba,projectbjpijihwyzp,None
+1006,查询设备延保记录列表：查询所有,True,test_huangfg,123456,"","",None
+1007,查询设备延保记录列表：查询条件对应记录不存在,False,test_huangfg,123456,alibaba,WWWW,None

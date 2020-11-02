@@ -1,0 +1,4 @@
+caseId,desc,isRun,account,password,projectId,poleId,expectedMessage
+1001,添加摄像头poleId不存在,True,test_hfg,888888,99999999,99999999,数字监控添加失败
+1002,添加摄像头poleId上已经有摄像头,True,test_hfg,888888,517,517,"数字监控添加失败,数据已存在"
+1003,添加摄像头poleId上无摄像头,False,test_hfg,888888,489,489,数字监控添加成功

@@ -1,0 +1,6 @@
+caseId,desc,isRun,account,password,customerNo,userId,expectedMessage
+1001,删除用户失败：删除不存在的用户,True,huangfg,888888,1001,999999,用户不存在
+1002,删除用户成功,True,huangfg,888888,1001,288,None
+1003,删除用户失败：参数错误userId为空,True,huangfg,888888,1001,"",参数错误
+1004,删除用户失败：删除已经被删除的用户(接口没校验),True,huangfg,888888,1001,288,None
+1005,删除用户失败：参数格式错误,True,huangfg,888888,1001,huangfg,Parameter is not valid for operation [hoolink-rpc.web.UserController.removeUser]. Parameter is [userId]. Processor is [body].

@@ -1,0 +1,5 @@
+caseId,desc,isRun,account,password,customerNo,ownerName,expectedMessage
+1001,用户名模糊查询,True,huangfg,888888,1001,tester,None
+1002,用户名模糊查询,True,huangfg,888888,1001,123456789,None
+1003,用户名模糊查询：查询所有,True,huangfg,888888,1001,"",None
+1004,用户名模糊查询：查询用户名不存在,True,huangfg,888888,1001,***%%%￥￥￥@@@@！！！！！！,None

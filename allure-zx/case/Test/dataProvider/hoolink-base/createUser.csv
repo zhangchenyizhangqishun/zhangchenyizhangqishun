@@ -1,0 +1,10 @@
+caseId,desc,isRun,account,password,customerNo,roleId,sex,userAccount,userName,expectedMessage
+1001,创建用户失败：姓名为空,True,huangfg,888888,1001,209,True,random,"","参数错误：姓名应该在1-15字符之间,姓名不允许为空"
+1002,创建用户失败：账号小于3个字符,True,huangfg,888888,1001,209,False,12,random,参数错误：账号应该在3-20字符之间
+1003,创建用户成功：random代表随机账号,True,huangfg,888888,1001,209,False,random,random,None
+1004,创建用户失败：参数错误（sex字段：男True，女False）,True,huangfg,888888,1001,209,wrongParamters,random,random,Parameter is not valid for operation [hoolink-rpc.web.UserController.createUser]. Parameter is [createUser]. Processor is [body].
+1005,创建用户失败：账号超过20个字符,True,huangfg,888888,1001,209,False,123456789012345678911,t_13567410028,参数错误：账号应该在3-20字符之间
+1006,创建用户失败：账号已存在,True,huangfg,888888,1001,209,False,tester_13567410028,t_13567410028,账号已存在
+1007,创建用户失败：姓名超过15个字符,True,huangfg,888888,1001,209,True,random,tester_13567410028,参数错误：姓名应该在1-15字符之间
+1008,创建用户失败：roleId(222)被禁用（接口未做校验）,True,huangfg,888888,1001,222,True,random,random,None
+1009,创建用户失败：roleId不存在（接口未做校验）,True,huangfg,888888,1001,999999,True,random,random,角色不存在

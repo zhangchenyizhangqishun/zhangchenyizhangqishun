@@ -1,0 +1,10 @@
+caseId,desc,isRun,account,password,roleId,roleStatus,expectedMessage
+1001,启用角色：（接口未做校验重复启用）,True,test_huangfg,123456,201,True,None
+1002,启用角色：id不允许为空,True,test_huangfg,123456,"",False,参数错误
+1003,禁用角色：id不允许为空,True,test_huangfg,123456,"",True,参数错误
+1004,启用禁用角色：status不允许为空,True,test_huangfg,123456,201,"",参数错误
+1005,禁用角色：（接口未做校验重复禁用）,True,test_huangfg,123456,201,False,None
+1006,禁用角色成功,True,test_huangfg,123456,191,False,None
+1007,启用角色成功,True,test_huangfg,123456,191,True,None
+1008,启用用户失败：（接口未做校验角色id不存在）,True,test_huangfg,123456,999999,True,None
+1009,禁用用户失败：（接口未做校验角色id不存在）,True,test_huangfg,123456,999999,False,None

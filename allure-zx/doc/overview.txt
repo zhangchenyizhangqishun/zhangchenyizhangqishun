@@ -1,0 +1,32 @@
+1. install git:
+a. TortoiseGit-1[1].7.12.0-32bit.msi
+b. Git-1[1].7.11-preview20120704.exe
+
+2. install python suite:
+a. python-2.7.15.msi , add python excute path to PATH Env
+b. setuptools-0.6c11.win32-py2.7.exe
+c. install pip: 
+i. python setup.py install
+ii. add installed path to os env
+iii. check pip install is ok: pip --version
+iiii. pip install --upgrade pip
+
+3. wxPython2.8-win32-unicode-2.8.12.1-py27.exe
+
+4. install robotframework:
+a. pip install robotframework
+b. check robotframework if is ok, in cmd type : pybot --version
+reference: http://code.google.com/p/robotframework-ride/wiki/InstallationInstructions
+
+5. install ride:
+a. pip install robotframework-ride
+b. check ride is ok, in cmd type: ride.py
+
+6. install pycharm
+
+7. install pyton lib
+i.pip install -r requirements.txt
+
+8.download code from svn:
+
+9.add PYTHONPATH to os env

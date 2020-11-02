@@ -1,0 +1,1336 @@
+info:: 2019-07-24 17:40:51.977000 Enter smokeUtils
+info:: 2019-07-24 17:40:51.980000 Enter hoolinkBase
+info:: 2019-07-24 17:40:51.980000 Enter tool
+info:: 2019-07-24 17:40:51.980000 Enter manageBase
+info:: 2019-07-24 17:40:51.980000 Enter manageBaseTool
+info:: 2019-07-24 17:40:51.981000 Enter base
+info:: 2019-07-24 17:40:51.981000 Enter manageBaseTool
+info:: 2019-07-24 17:40:51.981000 Enter manageEdm
+info:: 2019-07-24 17:40:51.981000 Enter manageEdmTool
+info:: 2019-07-24 17:40:51.981000 Enter abilityTool
+info:: 2019-07-24 17:40:51.981000 Enter hoolinkDevice
+info:: 2019-07-24 17:40:51.982000 Enter hoolinkDeviceTool
+info:: 2019-07-24 17:40:51.996000 Enter smokeTest::login
+info:: 2019-07-24 17:40:51.996000 Enter hoolinkBaseTool::login
+info:: 2019-07-24 17:40:51.996000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:51.996000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:51.996000 Enter hoolinkBase::login
+info:: 2019-07-24 17:40:51.996000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:51.996000 Enter hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:40:51.996000 Leave hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:40:51.996000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:51.996000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:51.997000 Enter Request::_log
+info:: 2019-07-24 17:40:51.997000 Leave Request::_log
+info:: 2019-07-24 17:40:51.997000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:51.997000 Leave hoolinkBase::login
+info:: 2019-07-24 17:40:51.997000 Enter HttpSession::request
+info:: 2019-07-24 17:40:51.997000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/login
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/login HTTP/1.1" 200 6554
+debug:: 2019-07-24 17:40:52.143000 HttpSession::request: response_headers: {'content-length': '6554', 'Access-Control-Allow-Headers': '*', 'TxId': '246F1B0DADB940C2B2B60B578195F434', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:52.143000 HttpSession::request: request_body: {"account": "huangfg", "password": "e10adc3949ba59abbe56e057f20f883e", "customerNo": "zhangxiao"}
+debug:: 2019-07-24 17:40:52.144000 HttpSession::request: response_content: {"status":true,"data":{"id":"706","userName":"黄锋钢","imageUrl":null,"token":"Rd4452Q0uLeZ6KqiA2sq9/b4ruQaEFxIaFC9SbBe6wfS8mwm+c2TjcpA32vcKhn1","firstLogin":false,"bindPhone":false,"resetPassword":false,"lastProjectId":514,"permissions":[{"title":"个人中心","value":"PERSONAL_CENTER","key":1,"children":[{"title":"基本信息","value":"ESSENTIAL_INFORMATION","key":3,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":0},{"title":"管理中心","value":"MANAGEMENT_CENTER","key":2,"children":[{"title":"用户管理","value":"USER_MANAGEMENT","key":4,"children":[],"readonly":true,"sceneId":null},{"title":"角色管理","value":"ROLE_MANAGEMENT","key":5,"children":[],"readonly":true,"sceneId":null},{"title":"项目管理","value":"PROJECT_MANAGEMENT","key":6,"children":[],"readonly":true,"sceneId":null}],"readonly":true,"sceneId":0},{"title":"应用","value":"ROAD_APPLICATION_CENTER","key":9,"children":[{"title":"智能照明","value":"ROAD_INTELLIGENT_LIGHT","key":41,"children":[{"title":"照明控制","value":"ROAD_LIGHTING_CONTROL","key":49,"children":[],"readonly":false,"sceneId":null},{"title":"定时策略","value":"ROAD_TIMING_STRATEGY","key":57,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_OPERATION_RECORD","key":145,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字监控","value":"ROAD_DIGITAL_MONITORING","key":65,"children":[{"title":"云模式","value":"ROAD_CLOUD_MODE","key":369,"children":[],"readonly":false,"sceneId":null},{"title":"本地模式","value":"ROAD_LOCAL_MODE","key":377,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字音响","value":"ROAD_DIGITAL_AUDIO","key":73,"children":[{"title":"数字音响","value":"ROAD_AUDIO","key":121,"children":[],"readonly":false,"sceneId":null},{"title":"音频文件","value":"ROAD_AUDIO_FILE","key":129,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_AUDIO_OPERA_RECORDS","key":137,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字广播","value":"ROAD_DIGITAL_BEOADCAST","key":81,"children":[{"title":"数字广播","value":"ROAD_BROADCAST","key":153,"children":[],"readonly":false,"sceneId":null},{"title":"广播记录","value":"ROAD_BROADCAST_OPERATION_RECORDS","key":161,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"信息发布","value":"ROAD_DIGITAL_SCREEN","key":89,"children":[{"title":"信息发布","value":"ROAD_SECOND_DIGITAL_SCREEN","key":217,"children":[],"readonly":false,"sceneId":null},{"title":"多媒体文件","value":"ROAD_SCREEN_MEDIA_FILE","key":225,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_SCREEN_OPERATION_RECORD","key":233,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"环境管理","value":"ROAD_DIGITAL_ENVIRONMENT","key":97,"children":[{"title":"环境管理","value":"ROAD_SECOND_DIGITAL_ENVIRONMENT","key":169,"children":[],"readonly":false,"sceneId":null},{"title":"历史数据","value":"ROAD_ENVIRONMENT_HISTORY_DATA","key":177,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"呼叫管理","value":"ROAD_DIGITAL_CALL","key":105,"children":[{"title":"呼叫管理","value":"ROAD_CALL_MANAGE","key":209,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"巡检管理","value":"ROAD_DIGITAL_PATRPL","key":113,"children":[{"title":"巡检计划","value":"ROAD_INSPECTION_PLAN","key":185,"children":[],"readonly":false,"sceneId":null},{"title":"巡检人员","value":"ROAD_INSPECTOR","key":193,"children":[],"readonly":false,"sceneId":null},{"title":"巡检记录","value":"ROAD_INSPECTION_HISTORY","key":201,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"设备","value":"ROAD_DEVICE_CENTER","key":33,"children":[{"title":"设备管理","value":"ROAD_DEVICE_MANAGER","key":17,"children":[{"title":"设备列表","value":"ROAD_DEVICE_LIST","key":25,"children":[],"readonly":false,"sceneId":null},{"title":"设备分组","value":"ROAD_DEVICE_GROUP","key":385,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"阈值管理","value":"ROAD_THRESHOLD_MANAGEMENT","key":289,"children":[{"title":"设备阈值","value":"ROAD_EQUIPMENT_THRESHOLD","key":297,"children":[],"readonly":false,"sceneId":null},{"title":"环境阈值","value":"ROAD_ENVIRONMENT_THRESHOLD","key":305,"children":[],"readonly":false,"sceneId":null},{"title":"气体阈值","value":"ROAD_GAS_THRESHOLD","key":313,"children":[],"readonly":false,"sceneId":null},{"title":"水质阈值","value":"ROAD_WATER_QUALITY_THRESHOLD","key":321,"children":[],"readonly":false,"sceneId":null},{"title":"水位阈值","value":"ROAD_WATER_LEVEL_THRESHOLD","key":329,"children":[],"readonly":false,"sceneId":null},{"title":"土壤阈值","value":"ROAD_SOIL_THRESHOLD","key":337,"children":[],"readonly":false,"sceneId":null},{"title":"特殊阈值","value":"ROAD_SPECIAL_THRESHOLD","key":345,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"运维中心","value":"ROAD_OPERATIONS_CENTER","key":241,"children":[{"title":"我的待办","value":"ROAD_MY_SCHEDULER","key":249,"children":[],"readonly":false,"sceneId":null},{"title":"工单列表","value":"ROAD_MY_WORK_ORDER","key":257,"children":[],"readonly":false,"sceneId":null},{"title":"流程配置","value":"ROAD_WORKFLOW_CONFIGURATION","key":265,"children":[],"readonly":false,"sceneId":null},{"title":"耗材管理","value":"ROAD_MATERIAL_MANAGEMENT","key":273,"children":[],"readonly":false,"sceneId":null},{"title":"运维统计","value":"ROAD_OPERATIONAL_STATISTICS","key":281,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"消息中心","value":"ROAD_MESSAGE_CENTER","key":353,"children":[],"readonly":false,"sceneId":3},{"title":"今日计划","value":"ROAD_TODAY_PLAN","key":361,"children":[],"readonly":false,"sceneId":3},{"title":"数据中心","value":"ROAD_DATA_CENTER","key":393,"children":[],"readonly":false,"sceneId":3}],"projects":[{"projectId":514,"projectNo":"8000513","projectName":"张晓","scencId":3,"modelUrl":"https://hoolink-customer.obs.cn-north-1.myhuaweicloud.com:443/201907051332111083741997"}]},"message":null}
+debug:: 2019-07-24 17:40:52.144000 HttpSession::request: url: /api/hoolink-rpc/web/login
+debug:: 2019-07-24 17:40:52.145000 HttpSession::request: content_size: 6554
+debug:: 2019-07-24 17:40:52.145000 HttpSession::request: start_time: 1563961252.0
+debug:: 2019-07-24 17:40:52.146000 HttpSession::request: request_headers: {'Content-Length': '97', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:52.146000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:52.146000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:52.147000 HttpSession::request: response_time: 145
+info:: 2019-07-24 17:40:52.147000 HttpSession::request:  status_code: 200, response_time: 145 ms, response_length: 6554 bytes
+info:: 2019-07-24 17:40:52.147000 Leave HttpSession::request
+info:: 2019-07-24 17:40:52.156000 Enter hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:52.157000 Leave hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:52.157000 Leave hoolinkBaseTool::login
+info:: 2019-07-24 17:40:52.157000 Leave smokeTest::login
+info:: 2019-07-24 17:40:52.159000 Enter hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:40:52.159000 Enter hoolinkDevice::getLightList
+info:: 2019-07-24 17:40:52.159000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:52.160000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:52.160000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:52.160000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:52.161000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:52.161000 Enter Request::_log
+info:: 2019-07-24 17:40:52.162000 Leave Request::_log
+info:: 2019-07-24 17:40:52.162000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:52.162000 Leave hoolinkDevice::getLightList
+info:: 2019-07-24 17:40:52.163000 Enter HttpSession::request
+info:: 2019-07-24 17:40:52.163000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/getLightList
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/getLightList HTTP/1.1" 200 1085
+debug:: 2019-07-24 17:40:52.274000 HttpSession::request: response_headers: {'content-length': '1085', 'Access-Control-Allow-Headers': '*', 'TxId': '64CC8743876A4E73BD27BAB3C1B31F76', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:52.274000 HttpSession::request: request_body: {"projectId": 514}
+debug:: 2019-07-24 17:40:52.275000 HttpSession::request: response_content: {"status":true,"data":[{"groupName":"张晓项目一组","deviceNum":2,"deviceLightVOList":[{"id":31413,"deviceName":"真实单灯75813-暂且勿动-请联系张晓","dimmingValue":14,"lightCurrent":57,"voltage":227,"lightPower":5,"temperature":35,"lightWeak":801,"status":4},{"id":31414,"deviceName":"真实单灯75823-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":19,"voltage":226,"lightPower":1,"temperature":35,"lightWeak":82,"status":4}]},{"groupName":"未分组","deviceNum":3,"deviceLightVOList":[{"id":31415,"deviceName":"真实单灯75821-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":20,"voltage":227,"lightPower":1,"temperature":34,"lightWeak":1021,"status":4},{"id":31416,"deviceName":"真实单灯94402-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":18,"voltage":228,"lightPower":0,"temperature":31,"lightWeak":738,"status":4},{"id":31417,"deviceName":"真实NB单灯-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":7,"voltage":1,"lightPower":0,"temperature":null,"lightWeak":null,"status":2}]}],"message":null}
+debug:: 2019-07-24 17:40:52.275000 HttpSession::request: url: /api/hoolink-rpc/web/light/getLightList
+debug:: 2019-07-24 17:40:52.275000 HttpSession::request: content_size: 1085
+debug:: 2019-07-24 17:40:52.276000 HttpSession::request: start_time: 1563961252.16
+debug:: 2019-07-24 17:40:52.276000 HttpSession::request: request_headers: {'Content-Length': '18', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Rd4452Q0uLeZ6KqiA2sq9/b4ruQaEFxIaFC9SbBe6wfS8mwm+c2TjcpA32vcKhn1', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:52.277000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:52.277000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:52.277000 HttpSession::request: response_time: 109
+info:: 2019-07-24 17:40:52.278000 HttpSession::request:  status_code: 200, response_time: 109 ms, response_length: 1085 bytes
+info:: 2019-07-24 17:40:52.278000 Leave HttpSession::request
+info:: 2019-07-24 17:40:52.280000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:52.281000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:52.281000 Leave hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:40:52.283000 Enter hoolinkDeviceTool::dimming
+info:: 2019-07-24 17:40:52.283000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:52.284000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:52.285000 Enter hoolinkDevice::dimming
+info:: 2019-07-24 17:40:52.285000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:52.286000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:52.286000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:52.287000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:52.287000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:52.288000 Enter Request::_log
+info:: 2019-07-24 17:40:52.290000 Leave Request::_log
+info:: 2019-07-24 17:40:52.290000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:52.291000 Leave hoolinkDevice::dimming
+info:: 2019-07-24 17:40:52.291000 Enter HttpSession::request
+info:: 2019-07-24 17:40:52.291000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/dimming
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/dimming HTTP/1.1" 200 42
+debug:: 2019-07-24 17:40:53.430000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '8A8AE9B3F7C4406E86B6E5659480B41D', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:53.430000 HttpSession::request: request_body: {"dimming": 25, "checkPassword": "e10adc3949ba59abbe56e057f20f883e", "projectId": 514, "lightIds": [31413, 31414, 31415, 31416, 31417]}
+debug:: 2019-07-24 17:40:53.430000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:40:53.430000 HttpSession::request: url: /api/hoolink-rpc/web/light/dimming
+debug:: 2019-07-24 17:40:53.430000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:40:53.431000 HttpSession::request: start_time: 1563961252.29
+debug:: 2019-07-24 17:40:53.431000 HttpSession::request: request_headers: {'Content-Length': '135', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Rd4452Q0uLeZ6KqiA2sq9/b4ruQaEFxIaFC9SbBe6wfS8mwm+c2TjcpA32vcKhn1', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:53.431000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:53.431000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:53.431000 HttpSession::request: response_time: 1138
+info:: 2019-07-24 17:40:53.431000 HttpSession::request:  status_code: 200, response_time: 1138 ms, response_length: 42 bytes
+info:: 2019-07-24 17:40:53.431000 Leave HttpSession::request
+info:: 2019-07-24 17:40:53.432000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.432000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.432000 Leave hoolinkDeviceTool::dimming
+info:: 2019-07-24 17:40:53.432000 Enter hoolinkDeviceTool::lightPageListBizReqHistory
+info:: 2019-07-24 17:40:53.432000 Enter hoolinkDevice::lightPageListBizReqHistory
+info:: 2019-07-24 17:40:53.433000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.433000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:53.433000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:53.433000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:53.433000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:53.433000 Enter Request::_log
+info:: 2019-07-24 17:40:53.434000 Leave Request::_log
+info:: 2019-07-24 17:40:53.434000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.434000 Leave hoolinkDevice::lightPageListBizReqHistory
+info:: 2019-07-24 17:40:53.434000 Enter HttpSession::request
+info:: 2019-07-24 17:40:53.434000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/pageListBizReqHistory
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/pageListBizReqHistory HTTP/1.1" 200 1789
+debug:: 2019-07-24 17:40:53.547000 HttpSession::request: response_headers: {'content-length': '1789', 'Access-Control-Allow-Headers': '*', 'TxId': '76D8A182F361460E8507D146F5D7A127', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:53.548000 HttpSession::request: request_body: {"pageSize": 10, "operationType": "\u8c03\u5149", "projectId": 514, "endTime": "", "pageNo": 1, "beginTime": ""}
+debug:: 2019-07-24 17:40:53.548000 HttpSession::request: response_content: {"status":true,"data":{"total":66,"list":[{"id":2541,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563939640906,"account":"huangfg","duration":null},{"id":2530,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563879354005,"account":"huangfg","duration":null},{"id":2525,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563875050155,"account":"huangfg","duration":null},{"id":2516,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563874233093,"account":"huangfg","duration":null},{"id":2489,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563868410474,"account":"huangfg","duration":null},{"id":2484,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563867438763,"account":"huangfg","duration":null},{"id":2474,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563864274612,"account":"huangfg","duration":null},{"id":2467,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563862944447,"account":"huangfg","duration":null},{"id":2440,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563847699583,"account":"huangfg","duration":null},{"id":2438,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563847684616,"account":"huangfg","duration":null}],"pageNum":1,"pageSize":10,"size":10,"startRow":1,"endRow":10,"pages":7,"prePage":0,"nextPage":2,"isFirstPage":true,"isLastPage":false,"hasPreviousPage":false,"hasNextPage":true,"navigatePages":8,"navigatepageNums":[1,2,3,4,5,6,7],"navigateFirstPage":1,"navigateLastPage":7,"firstPage":1,"lastPage":7},"message":null}
+debug:: 2019-07-24 17:40:53.549000 HttpSession::request: url: /api/hoolink-rpc/web/light/pageListBizReqHistory
+debug:: 2019-07-24 17:40:53.550000 HttpSession::request: content_size: 1789
+debug:: 2019-07-24 17:40:53.550000 HttpSession::request: start_time: 1563961253.43
+debug:: 2019-07-24 17:40:53.551000 HttpSession::request: request_headers: {'Content-Length': '112', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Rd4452Q0uLeZ6KqiA2sq9/b4ruQaEFxIaFC9SbBe6wfS8mwm+c2TjcpA32vcKhn1', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:53.551000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:53.552000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:53.552000 HttpSession::request: response_time: 112
+info:: 2019-07-24 17:40:53.553000 HttpSession::request:  status_code: 200, response_time: 112 ms, response_length: 1789 bytes
+info:: 2019-07-24 17:40:53.553000 Leave HttpSession::request
+info:: 2019-07-24 17:40:53.557000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.557000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.558000 Leave hoolinkDeviceTool::lightPageListBizReqHistory
+info:: 2019-07-24 17:40:53.595000 Enter smokeTest::login
+info:: 2019-07-24 17:40:53.596000 Enter hoolinkBaseTool::login
+info:: 2019-07-24 17:40:53.596000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:53.596000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:53.596000 Enter hoolinkBase::login
+info:: 2019-07-24 17:40:53.596000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.597000 Enter hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:40:53.597000 Leave hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:40:53.597000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:53.597000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:53.597000 Enter Request::_log
+info:: 2019-07-24 17:40:53.598000 Leave Request::_log
+info:: 2019-07-24 17:40:53.598000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.598000 Leave hoolinkBase::login
+info:: 2019-07-24 17:40:53.599000 Enter HttpSession::request
+info:: 2019-07-24 17:40:53.599000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/login
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/login HTTP/1.1" 200 6554
+debug:: 2019-07-24 17:40:53.704000 HttpSession::request: response_headers: {'content-length': '6554', 'Access-Control-Allow-Headers': '*', 'TxId': '427A696F6CFD49D398A57FE0D1A7BB59', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:53.704000 HttpSession::request: request_body: {"account": "huangfg", "password": "e10adc3949ba59abbe56e057f20f883e", "customerNo": "zhangxiao"}
+debug:: 2019-07-24 17:40:53.704000 HttpSession::request: response_content: {"status":true,"data":{"id":"706","userName":"黄锋钢","imageUrl":null,"token":"1pdG3+AJFm+c8nioYh1IN46KEfEyG/nPDM28uKErVTUIH5kFXyccJkhz49r8K70N","firstLogin":false,"bindPhone":false,"resetPassword":false,"lastProjectId":514,"permissions":[{"title":"个人中心","value":"PERSONAL_CENTER","key":1,"children":[{"title":"基本信息","value":"ESSENTIAL_INFORMATION","key":3,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":0},{"title":"管理中心","value":"MANAGEMENT_CENTER","key":2,"children":[{"title":"用户管理","value":"USER_MANAGEMENT","key":4,"children":[],"readonly":true,"sceneId":null},{"title":"角色管理","value":"ROLE_MANAGEMENT","key":5,"children":[],"readonly":true,"sceneId":null},{"title":"项目管理","value":"PROJECT_MANAGEMENT","key":6,"children":[],"readonly":true,"sceneId":null}],"readonly":true,"sceneId":0},{"title":"应用","value":"ROAD_APPLICATION_CENTER","key":9,"children":[{"title":"智能照明","value":"ROAD_INTELLIGENT_LIGHT","key":41,"children":[{"title":"照明控制","value":"ROAD_LIGHTING_CONTROL","key":49,"children":[],"readonly":false,"sceneId":null},{"title":"定时策略","value":"ROAD_TIMING_STRATEGY","key":57,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_OPERATION_RECORD","key":145,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字监控","value":"ROAD_DIGITAL_MONITORING","key":65,"children":[{"title":"云模式","value":"ROAD_CLOUD_MODE","key":369,"children":[],"readonly":false,"sceneId":null},{"title":"本地模式","value":"ROAD_LOCAL_MODE","key":377,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字音响","value":"ROAD_DIGITAL_AUDIO","key":73,"children":[{"title":"数字音响","value":"ROAD_AUDIO","key":121,"children":[],"readonly":false,"sceneId":null},{"title":"音频文件","value":"ROAD_AUDIO_FILE","key":129,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_AUDIO_OPERA_RECORDS","key":137,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字广播","value":"ROAD_DIGITAL_BEOADCAST","key":81,"children":[{"title":"数字广播","value":"ROAD_BROADCAST","key":153,"children":[],"readonly":false,"sceneId":null},{"title":"广播记录","value":"ROAD_BROADCAST_OPERATION_RECORDS","key":161,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"信息发布","value":"ROAD_DIGITAL_SCREEN","key":89,"children":[{"title":"信息发布","value":"ROAD_SECOND_DIGITAL_SCREEN","key":217,"children":[],"readonly":false,"sceneId":null},{"title":"多媒体文件","value":"ROAD_SCREEN_MEDIA_FILE","key":225,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_SCREEN_OPERATION_RECORD","key":233,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"环境管理","value":"ROAD_DIGITAL_ENVIRONMENT","key":97,"children":[{"title":"环境管理","value":"ROAD_SECOND_DIGITAL_ENVIRONMENT","key":169,"children":[],"readonly":false,"sceneId":null},{"title":"历史数据","value":"ROAD_ENVIRONMENT_HISTORY_DATA","key":177,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"呼叫管理","value":"ROAD_DIGITAL_CALL","key":105,"children":[{"title":"呼叫管理","value":"ROAD_CALL_MANAGE","key":209,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"巡检管理","value":"ROAD_DIGITAL_PATRPL","key":113,"children":[{"title":"巡检计划","value":"ROAD_INSPECTION_PLAN","key":185,"children":[],"readonly":false,"sceneId":null},{"title":"巡检人员","value":"ROAD_INSPECTOR","key":193,"children":[],"readonly":false,"sceneId":null},{"title":"巡检记录","value":"ROAD_INSPECTION_HISTORY","key":201,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"设备","value":"ROAD_DEVICE_CENTER","key":33,"children":[{"title":"设备管理","value":"ROAD_DEVICE_MANAGER","key":17,"children":[{"title":"设备列表","value":"ROAD_DEVICE_LIST","key":25,"children":[],"readonly":false,"sceneId":null},{"title":"设备分组","value":"ROAD_DEVICE_GROUP","key":385,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"阈值管理","value":"ROAD_THRESHOLD_MANAGEMENT","key":289,"children":[{"title":"设备阈值","value":"ROAD_EQUIPMENT_THRESHOLD","key":297,"children":[],"readonly":false,"sceneId":null},{"title":"环境阈值","value":"ROAD_ENVIRONMENT_THRESHOLD","key":305,"children":[],"readonly":false,"sceneId":null},{"title":"气体阈值","value":"ROAD_GAS_THRESHOLD","key":313,"children":[],"readonly":false,"sceneId":null},{"title":"水质阈值","value":"ROAD_WATER_QUALITY_THRESHOLD","key":321,"children":[],"readonly":false,"sceneId":null},{"title":"水位阈值","value":"ROAD_WATER_LEVEL_THRESHOLD","key":329,"children":[],"readonly":false,"sceneId":null},{"title":"土壤阈值","value":"ROAD_SOIL_THRESHOLD","key":337,"children":[],"readonly":false,"sceneId":null},{"title":"特殊阈值","value":"ROAD_SPECIAL_THRESHOLD","key":345,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"运维中心","value":"ROAD_OPERATIONS_CENTER","key":241,"children":[{"title":"我的待办","value":"ROAD_MY_SCHEDULER","key":249,"children":[],"readonly":false,"sceneId":null},{"title":"工单列表","value":"ROAD_MY_WORK_ORDER","key":257,"children":[],"readonly":false,"sceneId":null},{"title":"流程配置","value":"ROAD_WORKFLOW_CONFIGURATION","key":265,"children":[],"readonly":false,"sceneId":null},{"title":"耗材管理","value":"ROAD_MATERIAL_MANAGEMENT","key":273,"children":[],"readonly":false,"sceneId":null},{"title":"运维统计","value":"ROAD_OPERATIONAL_STATISTICS","key":281,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"消息中心","value":"ROAD_MESSAGE_CENTER","key":353,"children":[],"readonly":false,"sceneId":3},{"title":"今日计划","value":"ROAD_TODAY_PLAN","key":361,"children":[],"readonly":false,"sceneId":3},{"title":"数据中心","value":"ROAD_DATA_CENTER","key":393,"children":[],"readonly":false,"sceneId":3}],"projects":[{"projectId":514,"projectNo":"8000513","projectName":"张晓","scencId":3,"modelUrl":"https://hoolink-customer.obs.cn-north-1.myhuaweicloud.com:443/201907051332111083741997"}]},"message":null}
+debug:: 2019-07-24 17:40:53.705000 HttpSession::request: url: /api/hoolink-rpc/web/login
+debug:: 2019-07-24 17:40:53.705000 HttpSession::request: content_size: 6554
+debug:: 2019-07-24 17:40:53.705000 HttpSession::request: start_time: 1563961253.6
+debug:: 2019-07-24 17:40:53.705000 HttpSession::request: request_headers: {'Content-Length': '97', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:53.705000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:53.706000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:53.706000 HttpSession::request: response_time: 105
+info:: 2019-07-24 17:40:53.706000 HttpSession::request:  status_code: 200, response_time: 105 ms, response_length: 6554 bytes
+info:: 2019-07-24 17:40:53.706000 Leave HttpSession::request
+info:: 2019-07-24 17:40:53.711000 Enter hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.711000 Leave hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.711000 Leave hoolinkBaseTool::login
+info:: 2019-07-24 17:40:53.711000 Leave smokeTest::login
+info:: 2019-07-24 17:40:53.713000 Enter hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:40:53.713000 Enter hoolinkDevice::getLightList
+info:: 2019-07-24 17:40:53.713000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.713000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:53.713000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:53.714000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:53.714000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:53.714000 Enter Request::_log
+info:: 2019-07-24 17:40:53.715000 Leave Request::_log
+info:: 2019-07-24 17:40:53.715000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.715000 Leave hoolinkDevice::getLightList
+info:: 2019-07-24 17:40:53.715000 Enter HttpSession::request
+info:: 2019-07-24 17:40:53.715000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/getLightList
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/getLightList HTTP/1.1" 200 1085
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: response_headers: {'content-length': '1085', 'Access-Control-Allow-Headers': '*', 'TxId': '8D836440D4F84E3AB662BF5027C9E405', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: request_body: {"projectId": 514}
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: response_content: {"status":true,"data":[{"groupName":"张晓项目一组","deviceNum":2,"deviceLightVOList":[{"id":31413,"deviceName":"真实单灯75813-暂且勿动-请联系张晓","dimmingValue":14,"lightCurrent":57,"voltage":227,"lightPower":5,"temperature":35,"lightWeak":801,"status":4},{"id":31414,"deviceName":"真实单灯75823-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":19,"voltage":226,"lightPower":1,"temperature":35,"lightWeak":82,"status":4}]},{"groupName":"未分组","deviceNum":3,"deviceLightVOList":[{"id":31415,"deviceName":"真实单灯75821-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":20,"voltage":227,"lightPower":1,"temperature":34,"lightWeak":1021,"status":4},{"id":31416,"deviceName":"真实单灯94402-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":18,"voltage":228,"lightPower":0,"temperature":31,"lightWeak":738,"status":4},{"id":31417,"deviceName":"真实NB单灯-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":7,"voltage":1,"lightPower":0,"temperature":null,"lightWeak":null,"status":2}]}],"message":null}
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: url: /api/hoolink-rpc/web/light/getLightList
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: content_size: 1085
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: start_time: 1563961253.72
+debug:: 2019-07-24 17:40:53.819000 HttpSession::request: request_headers: {'Content-Length': '18', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'1pdG3+AJFm+c8nioYh1IN46KEfEyG/nPDM28uKErVTUIH5kFXyccJkhz49r8K70N', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:53.820000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:53.820000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:53.820000 HttpSession::request: response_time: 102
+info:: 2019-07-24 17:40:53.820000 HttpSession::request:  status_code: 200, response_time: 102 ms, response_length: 1085 bytes
+info:: 2019-07-24 17:40:53.820000 Leave HttpSession::request
+info:: 2019-07-24 17:40:53.820000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.821000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.821000 Leave hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:40:53.826000 Enter hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:40:53.826000 Enter hoolinkDevice::createStrategy
+info:: 2019-07-24 17:40:53.826000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.826000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:53.826000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:53.826000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:53.826000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:53.826000 Enter Request::_log
+info:: 2019-07-24 17:40:53.827000 Leave Request::_log
+info:: 2019-07-24 17:40:53.827000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.827000 Leave hoolinkDevice::createStrategy
+info:: 2019-07-24 17:40:53.827000 Enter HttpSession::request
+info:: 2019-07-24 17:40:53.827000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/create
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/create HTTP/1.1" 200 41
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: response_headers: {'content-length': '41', 'Access-Control-Allow-Headers': '*', 'TxId': 'CF580DE7AED849B39E60748826A94743', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: request_body: {"specialDates": [], "dayOfWeeks": [1, 2, 3, 4, 5, 6, 7], "name": "strategy_23041523653", "pattern": "1", "projectId": 514, "items": [{"subItems": [{"dimmingValue": 75, "deviceIds": [31413, 31414, 31415, 31416, 31417]}], "endTime": "17:42:00", "startTime": "17:41:00"}], "description": "strategyDesc50854502108"}
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: response_content: {"status":true,"data":159,"message":null}
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/create
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: content_size: 41
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: start_time: 1563961253.83
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: request_headers: {'Content-Length': '312', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'1pdG3+AJFm+c8nioYh1IN46KEfEyG/nPDM28uKErVTUIH5kFXyccJkhz49r8K70N', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:53.936000 HttpSession::request: response_time: 109
+info:: 2019-07-24 17:40:53.937000 HttpSession::request:  status_code: 200, response_time: 109 ms, response_length: 41 bytes
+info:: 2019-07-24 17:40:53.937000 Leave HttpSession::request
+info:: 2019-07-24 17:40:53.937000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.937000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:53.937000 Leave hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:40:53.937000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:53.937000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:53.937000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:53.937000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:53.937000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.938000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:53.938000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:53.938000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:53.938000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:53.938000 Enter Request::_log
+info:: 2019-07-24 17:40:53.938000 Leave Request::_log
+info:: 2019-07-24 17:40:53.939000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:53.939000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:53.939000 Enter HttpSession::request
+info:: 2019-07-24 17:40:53.939000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 42
+debug:: 2019-07-24 17:40:54.043000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': 'EB4B6E1E564B404C946ED96206FD798D', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.044000 HttpSession::request: request_body: {"projectId": 514, "id": 159, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:40:54.044000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:40:54.045000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:40:54.045000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:40:54.045000 HttpSession::request: start_time: 1563961253.94
+debug:: 2019-07-24 17:40:54.045000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'1pdG3+AJFm+c8nioYh1IN46KEfEyG/nPDM28uKErVTUIH5kFXyccJkhz49r8K70N', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.046000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.046000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.046000 HttpSession::request: response_time: 104
+info:: 2019-07-24 17:40:54.046000 HttpSession::request:  status_code: 200, response_time: 104 ms, response_length: 42 bytes
+info:: 2019-07-24 17:40:54.047000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.047000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.048000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.048000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:54.048000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:54.048000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.049000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.049000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:54.049000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.049000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:54.049000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:54.050000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.050000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.050000 Enter Request::_log
+info:: 2019-07-24 17:40:54.051000 Leave Request::_log
+info:: 2019-07-24 17:40:54.052000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.052000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:54.052000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.053000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 53
+debug:: 2019-07-24 17:40:54.167000 HttpSession::request: response_headers: {'content-length': '53', 'Access-Control-Allow-Headers': '*', 'TxId': '851F9610C4E74BEB8D43A2AE5E699C85', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.167000 HttpSession::request: request_body: {"projectId": 514, "id": 159, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:40:54.167000 HttpSession::request: response_content: {"status":false,"data":null,"message":"系统错误"}
+debug:: 2019-07-24 17:40:54.167000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:40:54.168000 HttpSession::request: content_size: 53
+debug:: 2019-07-24 17:40:54.168000 HttpSession::request: start_time: 1563961254.05
+debug:: 2019-07-24 17:40:54.168000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'1pdG3+AJFm+c8nioYh1IN46KEfEyG/nPDM28uKErVTUIH5kFXyccJkhz49r8K70N', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.169000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.169000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.169000 HttpSession::request: response_time: 114
+info:: 2019-07-24 17:40:54.169000 HttpSession::request:  status_code: 200, response_time: 114 ms, response_length: 53 bytes
+info:: 2019-07-24 17:40:54.170000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.170000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.171000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.171000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:54.194000 Enter smokeTest::login
+info:: 2019-07-24 17:40:54.194000 Enter hoolinkBaseTool::login
+info:: 2019-07-24 17:40:54.194000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.195000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.195000 Enter hoolinkBase::login
+info:: 2019-07-24 17:40:54.195000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.195000 Enter hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:40:54.195000 Leave hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:40:54.195000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.195000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.196000 Enter Request::_log
+info:: 2019-07-24 17:40:54.196000 Leave Request::_log
+info:: 2019-07-24 17:40:54.196000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.196000 Leave hoolinkBase::login
+info:: 2019-07-24 17:40:54.197000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.197000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/login
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/login HTTP/1.1" 200 6554
+debug:: 2019-07-24 17:40:54.313000 HttpSession::request: response_headers: {'content-length': '6554', 'Access-Control-Allow-Headers': '*', 'TxId': 'CA657979EB144CF7AE83F56E0EC172CA', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.313000 HttpSession::request: request_body: {"account": "huangfg", "password": "e10adc3949ba59abbe56e057f20f883e", "customerNo": "zhangxiao"}
+debug:: 2019-07-24 17:40:54.313000 HttpSession::request: response_content: {"status":true,"data":{"id":"706","userName":"黄锋钢","imageUrl":null,"token":"tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv","firstLogin":false,"bindPhone":false,"resetPassword":false,"lastProjectId":514,"permissions":[{"title":"个人中心","value":"PERSONAL_CENTER","key":1,"children":[{"title":"基本信息","value":"ESSENTIAL_INFORMATION","key":3,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":0},{"title":"管理中心","value":"MANAGEMENT_CENTER","key":2,"children":[{"title":"用户管理","value":"USER_MANAGEMENT","key":4,"children":[],"readonly":true,"sceneId":null},{"title":"角色管理","value":"ROLE_MANAGEMENT","key":5,"children":[],"readonly":true,"sceneId":null},{"title":"项目管理","value":"PROJECT_MANAGEMENT","key":6,"children":[],"readonly":true,"sceneId":null}],"readonly":true,"sceneId":0},{"title":"应用","value":"ROAD_APPLICATION_CENTER","key":9,"children":[{"title":"智能照明","value":"ROAD_INTELLIGENT_LIGHT","key":41,"children":[{"title":"照明控制","value":"ROAD_LIGHTING_CONTROL","key":49,"children":[],"readonly":false,"sceneId":null},{"title":"定时策略","value":"ROAD_TIMING_STRATEGY","key":57,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_OPERATION_RECORD","key":145,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字监控","value":"ROAD_DIGITAL_MONITORING","key":65,"children":[{"title":"云模式","value":"ROAD_CLOUD_MODE","key":369,"children":[],"readonly":false,"sceneId":null},{"title":"本地模式","value":"ROAD_LOCAL_MODE","key":377,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字音响","value":"ROAD_DIGITAL_AUDIO","key":73,"children":[{"title":"数字音响","value":"ROAD_AUDIO","key":121,"children":[],"readonly":false,"sceneId":null},{"title":"音频文件","value":"ROAD_AUDIO_FILE","key":129,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_AUDIO_OPERA_RECORDS","key":137,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字广播","value":"ROAD_DIGITAL_BEOADCAST","key":81,"children":[{"title":"数字广播","value":"ROAD_BROADCAST","key":153,"children":[],"readonly":false,"sceneId":null},{"title":"广播记录","value":"ROAD_BROADCAST_OPERATION_RECORDS","key":161,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"信息发布","value":"ROAD_DIGITAL_SCREEN","key":89,"children":[{"title":"信息发布","value":"ROAD_SECOND_DIGITAL_SCREEN","key":217,"children":[],"readonly":false,"sceneId":null},{"title":"多媒体文件","value":"ROAD_SCREEN_MEDIA_FILE","key":225,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_SCREEN_OPERATION_RECORD","key":233,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"环境管理","value":"ROAD_DIGITAL_ENVIRONMENT","key":97,"children":[{"title":"环境管理","value":"ROAD_SECOND_DIGITAL_ENVIRONMENT","key":169,"children":[],"readonly":false,"sceneId":null},{"title":"历史数据","value":"ROAD_ENVIRONMENT_HISTORY_DATA","key":177,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"呼叫管理","value":"ROAD_DIGITAL_CALL","key":105,"children":[{"title":"呼叫管理","value":"ROAD_CALL_MANAGE","key":209,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"巡检管理","value":"ROAD_DIGITAL_PATRPL","key":113,"children":[{"title":"巡检计划","value":"ROAD_INSPECTION_PLAN","key":185,"children":[],"readonly":false,"sceneId":null},{"title":"巡检人员","value":"ROAD_INSPECTOR","key":193,"children":[],"readonly":false,"sceneId":null},{"title":"巡检记录","value":"ROAD_INSPECTION_HISTORY","key":201,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"设备","value":"ROAD_DEVICE_CENTER","key":33,"children":[{"title":"设备管理","value":"ROAD_DEVICE_MANAGER","key":17,"children":[{"title":"设备列表","value":"ROAD_DEVICE_LIST","key":25,"children":[],"readonly":false,"sceneId":null},{"title":"设备分组","value":"ROAD_DEVICE_GROUP","key":385,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"阈值管理","value":"ROAD_THRESHOLD_MANAGEMENT","key":289,"children":[{"title":"设备阈值","value":"ROAD_EQUIPMENT_THRESHOLD","key":297,"children":[],"readonly":false,"sceneId":null},{"title":"环境阈值","value":"ROAD_ENVIRONMENT_THRESHOLD","key":305,"children":[],"readonly":false,"sceneId":null},{"title":"气体阈值","value":"ROAD_GAS_THRESHOLD","key":313,"children":[],"readonly":false,"sceneId":null},{"title":"水质阈值","value":"ROAD_WATER_QUALITY_THRESHOLD","key":321,"children":[],"readonly":false,"sceneId":null},{"title":"水位阈值","value":"ROAD_WATER_LEVEL_THRESHOLD","key":329,"children":[],"readonly":false,"sceneId":null},{"title":"土壤阈值","value":"ROAD_SOIL_THRESHOLD","key":337,"children":[],"readonly":false,"sceneId":null},{"title":"特殊阈值","value":"ROAD_SPECIAL_THRESHOLD","key":345,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"运维中心","value":"ROAD_OPERATIONS_CENTER","key":241,"children":[{"title":"我的待办","value":"ROAD_MY_SCHEDULER","key":249,"children":[],"readonly":false,"sceneId":null},{"title":"工单列表","value":"ROAD_MY_WORK_ORDER","key":257,"children":[],"readonly":false,"sceneId":null},{"title":"流程配置","value":"ROAD_WORKFLOW_CONFIGURATION","key":265,"children":[],"readonly":false,"sceneId":null},{"title":"耗材管理","value":"ROAD_MATERIAL_MANAGEMENT","key":273,"children":[],"readonly":false,"sceneId":null},{"title":"运维统计","value":"ROAD_OPERATIONAL_STATISTICS","key":281,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"消息中心","value":"ROAD_MESSAGE_CENTER","key":353,"children":[],"readonly":false,"sceneId":3},{"title":"今日计划","value":"ROAD_TODAY_PLAN","key":361,"children":[],"readonly":false,"sceneId":3},{"title":"数据中心","value":"ROAD_DATA_CENTER","key":393,"children":[],"readonly":false,"sceneId":3}],"projects":[{"projectId":514,"projectNo":"8000513","projectName":"张晓","scencId":3,"modelUrl":"https://hoolink-customer.obs.cn-north-1.myhuaweicloud.com:443/201907051332111083741997"}]},"message":null}
+debug:: 2019-07-24 17:40:54.314000 HttpSession::request: url: /api/hoolink-rpc/web/login
+debug:: 2019-07-24 17:40:54.314000 HttpSession::request: content_size: 6554
+debug:: 2019-07-24 17:40:54.314000 HttpSession::request: start_time: 1563961254.2
+debug:: 2019-07-24 17:40:54.314000 HttpSession::request: request_headers: {'Content-Length': '97', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.315000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.315000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.315000 HttpSession::request: response_time: 115
+info:: 2019-07-24 17:40:54.315000 HttpSession::request:  status_code: 200, response_time: 115 ms, response_length: 6554 bytes
+info:: 2019-07-24 17:40:54.315000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.320000 Enter hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.320000 Leave hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.320000 Leave hoolinkBaseTool::login
+info:: 2019-07-24 17:40:54.320000 Leave smokeTest::login
+info:: 2019-07-24 17:40:54.322000 Enter hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:40:54.322000 Enter hoolinkDevice::getLightList
+info:: 2019-07-24 17:40:54.322000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.322000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:54.322000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:54.323000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.323000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.323000 Enter Request::_log
+info:: 2019-07-24 17:40:54.324000 Leave Request::_log
+info:: 2019-07-24 17:40:54.324000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.324000 Leave hoolinkDevice::getLightList
+info:: 2019-07-24 17:40:54.324000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.324000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/getLightList
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/getLightList HTTP/1.1" 200 1085
+debug:: 2019-07-24 17:40:54.439000 HttpSession::request: response_headers: {'content-length': '1085', 'Access-Control-Allow-Headers': '*', 'TxId': '42B0C103832E47BCBEA090744131431A', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.440000 HttpSession::request: request_body: {"projectId": 514}
+debug:: 2019-07-24 17:40:54.440000 HttpSession::request: response_content: {"status":true,"data":[{"groupName":"张晓项目一组","deviceNum":2,"deviceLightVOList":[{"id":31413,"deviceName":"真实单灯75813-暂且勿动-请联系张晓","dimmingValue":14,"lightCurrent":57,"voltage":227,"lightPower":5,"temperature":35,"lightWeak":801,"status":4},{"id":31414,"deviceName":"真实单灯75823-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":19,"voltage":226,"lightPower":1,"temperature":35,"lightWeak":82,"status":4}]},{"groupName":"未分组","deviceNum":3,"deviceLightVOList":[{"id":31415,"deviceName":"真实单灯75821-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":20,"voltage":227,"lightPower":1,"temperature":34,"lightWeak":1021,"status":4},{"id":31416,"deviceName":"真实单灯94402-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":18,"voltage":228,"lightPower":0,"temperature":31,"lightWeak":738,"status":4},{"id":31417,"deviceName":"真实NB单灯-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":7,"voltage":1,"lightPower":0,"temperature":null,"lightWeak":null,"status":2}]}],"message":null}
+debug:: 2019-07-24 17:40:54.441000 HttpSession::request: url: /api/hoolink-rpc/web/light/getLightList
+debug:: 2019-07-24 17:40:54.441000 HttpSession::request: content_size: 1085
+debug:: 2019-07-24 17:40:54.441000 HttpSession::request: start_time: 1563961254.32
+debug:: 2019-07-24 17:40:54.442000 HttpSession::request: request_headers: {'Content-Length': '18', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.442000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.443000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.443000 HttpSession::request: response_time: 115
+info:: 2019-07-24 17:40:54.443000 HttpSession::request:  status_code: 200, response_time: 115 ms, response_length: 1085 bytes
+info:: 2019-07-24 17:40:54.444000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.446000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.446000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.447000 Leave hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:40:54.449000 Enter hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:40:54.449000 Enter hoolinkDevice::createStrategy
+info:: 2019-07-24 17:40:54.449000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.450000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:54.450000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:54.451000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.451000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.451000 Enter Request::_log
+info:: 2019-07-24 17:40:54.453000 Leave Request::_log
+info:: 2019-07-24 17:40:54.454000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.455000 Leave hoolinkDevice::createStrategy
+info:: 2019-07-24 17:40:54.455000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.455000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/create
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/create HTTP/1.1" 200 41
+debug:: 2019-07-24 17:40:54.551000 HttpSession::request: response_headers: {'content-length': '41', 'Access-Control-Allow-Headers': '*', 'TxId': 'FED1B81DE20A45D098068F7794FAA7DC', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.552000 HttpSession::request: request_body: {"specialDates": [], "dayOfWeeks": [1, 2, 3, 4, 5, 6, 7], "name": "strategy_33931121693", "pattern": "1", "projectId": 514, "items": [{"subItems": [{"dimmingValue": 75, "deviceIds": [31413, 31414, 31415, 31416, 31417]}], "endTime": "17:42:00", "startTime": "17:41:00"}], "description": "strategyDesc13236347164"}
+debug:: 2019-07-24 17:40:54.552000 HttpSession::request: response_content: {"status":true,"data":160,"message":null}
+debug:: 2019-07-24 17:40:54.552000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/create
+debug:: 2019-07-24 17:40:54.552000 HttpSession::request: content_size: 41
+debug:: 2019-07-24 17:40:54.553000 HttpSession::request: start_time: 1563961254.46
+debug:: 2019-07-24 17:40:54.553000 HttpSession::request: request_headers: {'Content-Length': '312', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.553000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.553000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.553000 HttpSession::request: response_time: 95
+info:: 2019-07-24 17:40:54.554000 HttpSession::request:  status_code: 200, response_time: 95 ms, response_length: 41 bytes
+info:: 2019-07-24 17:40:54.554000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.554000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.555000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.555000 Leave hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:40:54.555000 Enter hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:40:54.555000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.556000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.556000 Enter hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:40:54.556000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.556000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:54.556000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:54.557000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.557000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.557000 Enter Request::_log
+info:: 2019-07-24 17:40:54.558000 Leave Request::_log
+info:: 2019-07-24 17:40:54.559000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.559000 Leave hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:40:54.559000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.559000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/updateStatus
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/updateStatus HTTP/1.1" 200 42
+debug:: 2019-07-24 17:40:54.790000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': 'CC7FFFF7CD234B8191EAD7A69A958A5A', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.790000 HttpSession::request: request_body: {"status": true, "checkPassword": "e10adc3949ba59abbe56e057f20f883e", "projectId": 514, "id": 160}
+debug:: 2019-07-24 17:40:54.790000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:40:54.791000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/updateStatus
+debug:: 2019-07-24 17:40:54.791000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:40:54.791000 HttpSession::request: start_time: 1563961254.56
+debug:: 2019-07-24 17:40:54.792000 HttpSession::request: request_headers: {'Content-Length': '98', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.792000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.792000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.792000 HttpSession::request: response_time: 230
+info:: 2019-07-24 17:40:54.793000 HttpSession::request:  status_code: 200, response_time: 230 ms, response_length: 42 bytes
+info:: 2019-07-24 17:40:54.793000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.795000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.795000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.795000 Leave hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:40:54.796000 Enter hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:40:54.796000 Enter hoolinkDevice::createStrategy
+info:: 2019-07-24 17:40:54.796000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.796000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:54.797000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:54.797000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.797000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.797000 Enter Request::_log
+info:: 2019-07-24 17:40:54.798000 Leave Request::_log
+info:: 2019-07-24 17:40:54.798000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.798000 Leave hoolinkDevice::createStrategy
+info:: 2019-07-24 17:40:54.799000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.799000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/create
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/create HTTP/1.1" 200 41
+debug:: 2019-07-24 17:40:54.902000 HttpSession::request: response_headers: {'content-length': '41', 'Access-Control-Allow-Headers': '*', 'TxId': '89DE546E6CED43FB939F2D1C34EA7D2C', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:54.903000 HttpSession::request: request_body: {"specialDates": [], "dayOfWeeks": [1, 2, 3, 4, 5, 6, 7], "name": "strategy_25506891290", "pattern": "1", "projectId": 514, "items": [{"subItems": [{"dimmingValue": 25, "deviceIds": [31413, 31414, 31415, 31416, 31417]}], "endTime": "17:42:00", "startTime": "17:41:00"}], "description": "strategyDesc70327858187"}
+debug:: 2019-07-24 17:40:54.903000 HttpSession::request: response_content: {"status":true,"data":161,"message":null}
+debug:: 2019-07-24 17:40:54.904000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/create
+debug:: 2019-07-24 17:40:54.904000 HttpSession::request: content_size: 41
+debug:: 2019-07-24 17:40:54.905000 HttpSession::request: start_time: 1563961254.8
+debug:: 2019-07-24 17:40:54.906000 HttpSession::request: request_headers: {'Content-Length': '312', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:54.906000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:54.907000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:54.907000 HttpSession::request: response_time: 102
+info:: 2019-07-24 17:40:54.908000 HttpSession::request:  status_code: 200, response_time: 102 ms, response_length: 41 bytes
+info:: 2019-07-24 17:40:54.908000 Leave HttpSession::request
+info:: 2019-07-24 17:40:54.909000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.909000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:54.910000 Leave hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:40:54.910000 Enter hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:40:54.910000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.911000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:54.911000 Enter hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:40:54.911000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.912000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:54.912000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:54.913000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:54.913000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:54.913000 Enter Request::_log
+info:: 2019-07-24 17:40:54.915000 Leave Request::_log
+info:: 2019-07-24 17:40:54.915000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:54.915000 Leave hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:40:54.915000 Enter HttpSession::request
+info:: 2019-07-24 17:40:54.916000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/updateStatus
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/updateStatus HTTP/1.1" 200 328
+debug:: 2019-07-24 17:40:55.043000 HttpSession::request: response_headers: {'content-length': '328', 'Access-Control-Allow-Headers': '*', 'TxId': '33C0E48ADE3147E1B6AC320E77914DE4', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.043000 HttpSession::request: request_body: {"status": true, "checkPassword": "e10adc3949ba59abbe56e057f20f883e", "projectId": 514, "id": 161}
+debug:: 2019-07-24 17:40:55.043000 HttpSession::request: response_content: {"status":true,"data":[{"name":"strategy_33931121693","pattern":1,"patternNames":["每天"],"conflictTimes":[{"startTime":"17:41","endTime":"17:42","status":true}],"devices":[{"id":31413,"status":true},{"id":31414,"status":true},{"id":31415,"status":true},{"id":31416,"status":true},{"id":31417,"status":true}]}],"message":null}
+debug:: 2019-07-24 17:40:55.044000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/updateStatus
+debug:: 2019-07-24 17:40:55.044000 HttpSession::request: content_size: 328
+debug:: 2019-07-24 17:40:55.044000 HttpSession::request: start_time: 1563961254.92
+debug:: 2019-07-24 17:40:55.044000 HttpSession::request: request_headers: {'Content-Length': '98', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.044000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.044000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.045000 HttpSession::request: response_time: 127
+info:: 2019-07-24 17:40:55.045000 HttpSession::request:  status_code: 200, response_time: 127 ms, response_length: 328 bytes
+info:: 2019-07-24 17:40:55.045000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.046000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.046000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.046000 Leave hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:40:55.047000 Enter hoolinkDeviceTool::getStrategyConflictDevice
+info:: 2019-07-24 17:40:55.048000 Enter hoolinkDevice::getStrategyConflictDevice
+info:: 2019-07-24 17:40:55.048000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.048000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:55.048000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:55.048000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:55.049000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:55.049000 Enter Request::_log
+info:: 2019-07-24 17:40:55.049000 Leave Request::_log
+info:: 2019-07-24 17:40:55.050000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.050000 Leave hoolinkDevice::getStrategyConflictDevice
+info:: 2019-07-24 17:40:55.050000 Enter HttpSession::request
+info:: 2019-07-24 17:40:55.050000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/getConflictDevice
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/getConflictDevice HTTP/1.1" 200 716
+debug:: 2019-07-24 17:40:55.168000 HttpSession::request: response_headers: {'content-length': '716', 'Access-Control-Allow-Headers': '*', 'TxId': 'EDF90906581644578AD064E6B266FECD', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.168000 HttpSession::request: request_body: {"projectId": 514, "devices": [{"status": true, "id": 31413}, {"status": true, "id": 31414}, {"status": true, "id": 31415}, {"status": true, "id": 31416}, {"status": true, "id": 31417}]}
+debug:: 2019-07-24 17:40:55.169000 HttpSession::request: response_content: {"status":true,"data":[{"id":"0未分组","value":0,"title":"未分组(3)","devices":[{"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"id":31415,"type":7,"status":true},{"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"id":31416,"type":7,"status":true},{"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"id":31417,"type":7,"status":true}]},{"id":"35张晓项目一组","value":35,"title":"张晓项目一组(2)","devices":[{"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"id":31413,"type":7,"status":true},{"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"id":31414,"type":7,"status":true}]}],"message":null}
+debug:: 2019-07-24 17:40:55.169000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/getConflictDevice
+debug:: 2019-07-24 17:40:55.169000 HttpSession::request: content_size: 716
+debug:: 2019-07-24 17:40:55.170000 HttpSession::request: start_time: 1563961255.05
+debug:: 2019-07-24 17:40:55.170000 HttpSession::request: request_headers: {'Content-Length': '186', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.170000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.171000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.171000 HttpSession::request: response_time: 118
+info:: 2019-07-24 17:40:55.171000 HttpSession::request:  status_code: 200, response_time: 118 ms, response_length: 716 bytes
+info:: 2019-07-24 17:40:55.172000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.174000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.174000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.175000 Leave hoolinkDeviceTool::getStrategyConflictDevice
+info:: 2019-07-24 17:40:55.175000 Enter hoolinkDeviceTool::forcedStrategyToEnable
+info:: 2019-07-24 17:40:55.175000 Enter hoolinkDevice::forcedStrategyToEnable
+info:: 2019-07-24 17:40:55.176000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.176000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:55.176000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:55.177000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:55.177000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:55.177000 Enter Request::_log
+info:: 2019-07-24 17:40:55.179000 Leave Request::_log
+info:: 2019-07-24 17:40:55.179000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.179000 Leave hoolinkDevice::forcedStrategyToEnable
+info:: 2019-07-24 17:40:55.180000 Enter HttpSession::request
+info:: 2019-07-24 17:40:55.180000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/forcedToEnable
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/forcedToEnable HTTP/1.1" 200 42
+debug:: 2019-07-24 17:40:55.389000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '9557D94EE36B47C989731DD4CD9DAB6D', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.390000 HttpSession::request: request_body: {"projectId": 514, "id": 161, "checkPassword": "123456"}
+debug:: 2019-07-24 17:40:55.390000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:40:55.391000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/forcedToEnable
+debug:: 2019-07-24 17:40:55.391000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:40:55.391000 HttpSession::request: start_time: 1563961255.18
+debug:: 2019-07-24 17:40:55.392000 HttpSession::request: request_headers: {'Content-Length': '56', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.392000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.392000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.393000 HttpSession::request: response_time: 208
+info:: 2019-07-24 17:40:55.393000 HttpSession::request:  status_code: 200, response_time: 208 ms, response_length: 42 bytes
+info:: 2019-07-24 17:40:55.393000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.394000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.394000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.395000 Leave hoolinkDeviceTool::forcedStrategyToEnable
+info:: 2019-07-24 17:40:55.395000 Enter hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:40:55.395000 Enter hoolinkDevice::getStrategy
+info:: 2019-07-24 17:40:55.395000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.395000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:55.395000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:55.395000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:55.396000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:55.396000 Enter Request::_log
+info:: 2019-07-24 17:40:55.396000 Leave Request::_log
+info:: 2019-07-24 17:40:55.396000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.396000 Leave hoolinkDevice::getStrategy
+info:: 2019-07-24 17:40:55.397000 Enter HttpSession::request
+info:: 2019-07-24 17:40:55.397000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/get
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/get HTTP/1.1" 200 2441
+debug:: 2019-07-24 17:40:55.512000 HttpSession::request: response_headers: {'content-length': '2441', 'Access-Control-Allow-Headers': '*', 'TxId': '926F44AC2A2F4F8FB3CA6418B5007706', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.512000 HttpSession::request: request_body: {"projectId": 514, "data": 160}
+debug:: 2019-07-24 17:40:55.513000 HttpSession::request: response_content: {"status":true,"data":{"name":"strategy_33931121693","description":"strategyDesc13236347164","status":false,"pattern":1,"dayOfWeeks":null,"specialDates":null,"items":[{"startTime":"17:41:00","endTime":"17:42:00","subItems":[{"deviceIds":[31413,31414,31415,31416,31417],"deviceNames":["真实单灯75813-暂且勿动-请联系张晓","真实单灯75823-暂且勿动-请联系张晓","真实单灯75821-暂且勿动-请联系张晓","真实单灯94402-暂且勿动-请联系张晓","真实NB单灯-暂且勿动-请联系张晓"],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}],"dimmingValue":75}]}],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}]},"message":null}
+debug:: 2019-07-24 17:40:55.513000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/get
+debug:: 2019-07-24 17:40:55.513000 HttpSession::request: content_size: 2441
+debug:: 2019-07-24 17:40:55.514000 HttpSession::request: start_time: 1563961255.4
+debug:: 2019-07-24 17:40:55.514000 HttpSession::request: request_headers: {'Content-Length': '31', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.514000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.515000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.515000 HttpSession::request: response_time: 115
+info:: 2019-07-24 17:40:55.515000 HttpSession::request:  status_code: 200, response_time: 115 ms, response_length: 2441 bytes
+info:: 2019-07-24 17:40:55.515000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.518000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.518000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.518000 Leave hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:40:55.518000 Enter hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:40:55.518000 Enter hoolinkDevice::getStrategy
+info:: 2019-07-24 17:40:55.519000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.519000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:55.519000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:55.519000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:55.520000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:55.520000 Enter Request::_log
+info:: 2019-07-24 17:40:55.520000 Leave Request::_log
+info:: 2019-07-24 17:40:55.521000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.521000 Leave hoolinkDevice::getStrategy
+info:: 2019-07-24 17:40:55.521000 Enter HttpSession::request
+info:: 2019-07-24 17:40:55.521000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/get
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/get HTTP/1.1" 200 2440
+debug:: 2019-07-24 17:40:55.633000 HttpSession::request: response_headers: {'content-length': '2440', 'Access-Control-Allow-Headers': '*', 'TxId': '774A7BDF4EB34A1D9C386BD3741979DE', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.633000 HttpSession::request: request_body: {"projectId": 514, "data": 161}
+debug:: 2019-07-24 17:40:55.633000 HttpSession::request: response_content: {"status":true,"data":{"name":"strategy_25506891290","description":"strategyDesc70327858187","status":true,"pattern":1,"dayOfWeeks":null,"specialDates":null,"items":[{"startTime":"17:41:00","endTime":"17:42:00","subItems":[{"deviceIds":[31413,31414,31415,31416,31417],"deviceNames":["真实单灯75813-暂且勿动-请联系张晓","真实单灯75823-暂且勿动-请联系张晓","真实单灯75821-暂且勿动-请联系张晓","真实单灯94402-暂且勿动-请联系张晓","真实NB单灯-暂且勿动-请联系张晓"],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}],"dimmingValue":25}]}],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}]},"message":null}
+debug:: 2019-07-24 17:40:55.634000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/get
+debug:: 2019-07-24 17:40:55.634000 HttpSession::request: content_size: 2440
+debug:: 2019-07-24 17:40:55.634000 HttpSession::request: start_time: 1563961255.52
+debug:: 2019-07-24 17:40:55.634000 HttpSession::request: request_headers: {'Content-Length': '31', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.635000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.635000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.635000 HttpSession::request: response_time: 111
+info:: 2019-07-24 17:40:55.635000 HttpSession::request:  status_code: 200, response_time: 111 ms, response_length: 2440 bytes
+info:: 2019-07-24 17:40:55.636000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.638000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.638000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.638000 Leave hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:40:55.639000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:55.639000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:55.639000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:55.639000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:55.639000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.640000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:55.640000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:55.640000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:55.640000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:55.640000 Enter Request::_log
+info:: 2019-07-24 17:40:55.641000 Leave Request::_log
+info:: 2019-07-24 17:40:55.641000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.642000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:55.642000 Enter HttpSession::request
+info:: 2019-07-24 17:40:55.642000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 42
+debug:: 2019-07-24 17:40:55.757000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': 'DC476B0AA7744761BE8151130D1DFF81', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.757000 HttpSession::request: request_body: {"projectId": 514, "id": 160, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:40:55.758000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:40:55.758000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:40:55.758000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:40:55.758000 HttpSession::request: start_time: 1563961255.64
+debug:: 2019-07-24 17:40:55.758000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.759000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.759000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.759000 HttpSession::request: response_time: 115
+info:: 2019-07-24 17:40:55.759000 HttpSession::request:  status_code: 200, response_time: 115 ms, response_length: 42 bytes
+info:: 2019-07-24 17:40:55.759000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.760000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.760000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.760000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:55.760000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:40:55.760000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:55.761000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:40:55.761000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:55.761000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.761000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:40:55.761000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:40:55.762000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:40:55.762000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:40:55.762000 Enter Request::_log
+info:: 2019-07-24 17:40:55.763000 Leave Request::_log
+info:: 2019-07-24 17:40:55.763000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:40:55.763000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:40:55.763000 Enter HttpSession::request
+info:: 2019-07-24 17:40:55.764000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 42
+debug:: 2019-07-24 17:40:55.915000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '1147C7900AF14A059E9284EC09328B10', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:40:55.916000 HttpSession::request: request_body: {"projectId": 514, "id": 161, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:40:55.916000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:40:55.916000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:40:55.916000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:40:55.916000 HttpSession::request: start_time: 1563961255.76
+debug:: 2019-07-24 17:40:55.917000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'tblG2IQtjbrl7R6x22+9fb4qzaOw9tGENi3UHdpGDjxDxgd3NPIJpLwyJsUkU6hv', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:40:55.917000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:40:55.917000 HttpSession::request: method: post
+debug:: 2019-07-24 17:40:55.917000 HttpSession::request: response_time: 151
+info:: 2019-07-24 17:40:55.917000 HttpSession::request:  status_code: 200, response_time: 151 ms, response_length: 42 bytes
+info:: 2019-07-24 17:40:55.918000 Leave HttpSession::request
+info:: 2019-07-24 17:40:55.918000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.918000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:40:55.919000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:21.737000 Enter smokeUtils
+info:: 2019-07-24 17:45:21.737000 Enter hoolinkBase
+info:: 2019-07-24 17:45:21.737000 Enter tool
+info:: 2019-07-24 17:45:21.737000 Enter manageBase
+info:: 2019-07-24 17:45:21.737000 Enter manageBaseTool
+info:: 2019-07-24 17:45:21.738000 Enter base
+info:: 2019-07-24 17:45:21.738000 Enter manageBaseTool
+info:: 2019-07-24 17:45:21.738000 Enter manageEdm
+info:: 2019-07-24 17:45:21.738000 Enter manageEdmTool
+info:: 2019-07-24 17:45:21.738000 Enter abilityTool
+info:: 2019-07-24 17:45:21.738000 Enter hoolinkDevice
+info:: 2019-07-24 17:45:21.738000 Enter hoolinkDeviceTool
+info:: 2019-07-24 17:45:21.743000 Enter smokeTest::login
+info:: 2019-07-24 17:45:21.743000 Enter hoolinkBaseTool::login
+info:: 2019-07-24 17:45:21.744000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:21.744000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:21.744000 Enter hoolinkBase::login
+info:: 2019-07-24 17:45:21.744000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:21.744000 Enter hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:45:21.744000 Leave hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:45:21.744000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:21.744000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:21.744000 Enter Request::_log
+info:: 2019-07-24 17:45:21.745000 Leave Request::_log
+info:: 2019-07-24 17:45:21.745000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:21.745000 Leave hoolinkBase::login
+info:: 2019-07-24 17:45:21.745000 Enter HttpSession::request
+info:: 2019-07-24 17:45:21.745000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/login
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/login HTTP/1.1" 200 6554
+debug:: 2019-07-24 17:45:21.878000 HttpSession::request: response_headers: {'content-length': '6554', 'Access-Control-Allow-Headers': '*', 'TxId': 'ACF3120B78BB40B68C3AFFEA8BCABFA6', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:21.878000 HttpSession::request: request_body: {"account": "huangfg", "password": "e10adc3949ba59abbe56e057f20f883e", "customerNo": "zhangxiao"}
+debug:: 2019-07-24 17:45:21.878000 HttpSession::request: response_content: {"status":true,"data":{"id":"706","userName":"黄锋钢","imageUrl":null,"token":"TCmzqMFxMvLtwZqzLPbfplXOTBUjeu6gANp+CgUk7Gg4ah7PXYj2eAqJ2vzPGJvb","firstLogin":false,"bindPhone":false,"resetPassword":false,"lastProjectId":514,"permissions":[{"title":"个人中心","value":"PERSONAL_CENTER","key":1,"children":[{"title":"基本信息","value":"ESSENTIAL_INFORMATION","key":3,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":0},{"title":"管理中心","value":"MANAGEMENT_CENTER","key":2,"children":[{"title":"用户管理","value":"USER_MANAGEMENT","key":4,"children":[],"readonly":true,"sceneId":null},{"title":"角色管理","value":"ROLE_MANAGEMENT","key":5,"children":[],"readonly":true,"sceneId":null},{"title":"项目管理","value":"PROJECT_MANAGEMENT","key":6,"children":[],"readonly":true,"sceneId":null}],"readonly":true,"sceneId":0},{"title":"应用","value":"ROAD_APPLICATION_CENTER","key":9,"children":[{"title":"智能照明","value":"ROAD_INTELLIGENT_LIGHT","key":41,"children":[{"title":"照明控制","value":"ROAD_LIGHTING_CONTROL","key":49,"children":[],"readonly":false,"sceneId":null},{"title":"定时策略","value":"ROAD_TIMING_STRATEGY","key":57,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_OPERATION_RECORD","key":145,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字监控","value":"ROAD_DIGITAL_MONITORING","key":65,"children":[{"title":"云模式","value":"ROAD_CLOUD_MODE","key":369,"children":[],"readonly":false,"sceneId":null},{"title":"本地模式","value":"ROAD_LOCAL_MODE","key":377,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字音响","value":"ROAD_DIGITAL_AUDIO","key":73,"children":[{"title":"数字音响","value":"ROAD_AUDIO","key":121,"children":[],"readonly":false,"sceneId":null},{"title":"音频文件","value":"ROAD_AUDIO_FILE","key":129,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_AUDIO_OPERA_RECORDS","key":137,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字广播","value":"ROAD_DIGITAL_BEOADCAST","key":81,"children":[{"title":"数字广播","value":"ROAD_BROADCAST","key":153,"children":[],"readonly":false,"sceneId":null},{"title":"广播记录","value":"ROAD_BROADCAST_OPERATION_RECORDS","key":161,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"信息发布","value":"ROAD_DIGITAL_SCREEN","key":89,"children":[{"title":"信息发布","value":"ROAD_SECOND_DIGITAL_SCREEN","key":217,"children":[],"readonly":false,"sceneId":null},{"title":"多媒体文件","value":"ROAD_SCREEN_MEDIA_FILE","key":225,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_SCREEN_OPERATION_RECORD","key":233,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"环境管理","value":"ROAD_DIGITAL_ENVIRONMENT","key":97,"children":[{"title":"环境管理","value":"ROAD_SECOND_DIGITAL_ENVIRONMENT","key":169,"children":[],"readonly":false,"sceneId":null},{"title":"历史数据","value":"ROAD_ENVIRONMENT_HISTORY_DATA","key":177,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"呼叫管理","value":"ROAD_DIGITAL_CALL","key":105,"children":[{"title":"呼叫管理","value":"ROAD_CALL_MANAGE","key":209,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"巡检管理","value":"ROAD_DIGITAL_PATRPL","key":113,"children":[{"title":"巡检计划","value":"ROAD_INSPECTION_PLAN","key":185,"children":[],"readonly":false,"sceneId":null},{"title":"巡检人员","value":"ROAD_INSPECTOR","key":193,"children":[],"readonly":false,"sceneId":null},{"title":"巡检记录","value":"ROAD_INSPECTION_HISTORY","key":201,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"设备","value":"ROAD_DEVICE_CENTER","key":33,"children":[{"title":"设备管理","value":"ROAD_DEVICE_MANAGER","key":17,"children":[{"title":"设备列表","value":"ROAD_DEVICE_LIST","key":25,"children":[],"readonly":false,"sceneId":null},{"title":"设备分组","value":"ROAD_DEVICE_GROUP","key":385,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"阈值管理","value":"ROAD_THRESHOLD_MANAGEMENT","key":289,"children":[{"title":"设备阈值","value":"ROAD_EQUIPMENT_THRESHOLD","key":297,"children":[],"readonly":false,"sceneId":null},{"title":"环境阈值","value":"ROAD_ENVIRONMENT_THRESHOLD","key":305,"children":[],"readonly":false,"sceneId":null},{"title":"气体阈值","value":"ROAD_GAS_THRESHOLD","key":313,"children":[],"readonly":false,"sceneId":null},{"title":"水质阈值","value":"ROAD_WATER_QUALITY_THRESHOLD","key":321,"children":[],"readonly":false,"sceneId":null},{"title":"水位阈值","value":"ROAD_WATER_LEVEL_THRESHOLD","key":329,"children":[],"readonly":false,"sceneId":null},{"title":"土壤阈值","value":"ROAD_SOIL_THRESHOLD","key":337,"children":[],"readonly":false,"sceneId":null},{"title":"特殊阈值","value":"ROAD_SPECIAL_THRESHOLD","key":345,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"运维中心","value":"ROAD_OPERATIONS_CENTER","key":241,"children":[{"title":"我的待办","value":"ROAD_MY_SCHEDULER","key":249,"children":[],"readonly":false,"sceneId":null},{"title":"工单列表","value":"ROAD_MY_WORK_ORDER","key":257,"children":[],"readonly":false,"sceneId":null},{"title":"流程配置","value":"ROAD_WORKFLOW_CONFIGURATION","key":265,"children":[],"readonly":false,"sceneId":null},{"title":"耗材管理","value":"ROAD_MATERIAL_MANAGEMENT","key":273,"children":[],"readonly":false,"sceneId":null},{"title":"运维统计","value":"ROAD_OPERATIONAL_STATISTICS","key":281,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"消息中心","value":"ROAD_MESSAGE_CENTER","key":353,"children":[],"readonly":false,"sceneId":3},{"title":"今日计划","value":"ROAD_TODAY_PLAN","key":361,"children":[],"readonly":false,"sceneId":3},{"title":"数据中心","value":"ROAD_DATA_CENTER","key":393,"children":[],"readonly":false,"sceneId":3}],"projects":[{"projectId":514,"projectNo":"8000513","projectName":"张晓","scencId":3,"modelUrl":"https://hoolink-customer.obs.cn-north-1.myhuaweicloud.com:443/201907051332111083741997"}]},"message":null}
+debug:: 2019-07-24 17:45:21.879000 HttpSession::request: url: /api/hoolink-rpc/web/login
+debug:: 2019-07-24 17:45:21.879000 HttpSession::request: content_size: 6554
+debug:: 2019-07-24 17:45:21.879000 HttpSession::request: start_time: 1563961521.74
+debug:: 2019-07-24 17:45:21.879000 HttpSession::request: request_headers: {'Content-Length': '97', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:21.879000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:21.879000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:21.880000 HttpSession::request: response_time: 133
+info:: 2019-07-24 17:45:21.880000 HttpSession::request:  status_code: 200, response_time: 133 ms, response_length: 6554 bytes
+info:: 2019-07-24 17:45:21.880000 Leave HttpSession::request
+info:: 2019-07-24 17:45:21.883000 Enter hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:21.883000 Leave hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:21.884000 Leave hoolinkBaseTool::login
+info:: 2019-07-24 17:45:21.884000 Leave smokeTest::login
+info:: 2019-07-24 17:45:21.885000 Enter hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:45:21.885000 Enter hoolinkDevice::getLightList
+info:: 2019-07-24 17:45:21.885000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:21.885000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:21.885000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:21.885000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:21.886000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:21.886000 Enter Request::_log
+info:: 2019-07-24 17:45:21.887000 Leave Request::_log
+info:: 2019-07-24 17:45:21.887000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:21.887000 Leave hoolinkDevice::getLightList
+info:: 2019-07-24 17:45:21.887000 Enter HttpSession::request
+info:: 2019-07-24 17:45:21.887000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/getLightList
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/getLightList HTTP/1.1" 200 1085
+debug:: 2019-07-24 17:45:22.023000 HttpSession::request: response_headers: {'content-length': '1085', 'Access-Control-Allow-Headers': '*', 'TxId': 'BAB96FEC9D36444BA3A2E916B5FF61C8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: request_body: {"projectId": 514}
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: response_content: {"status":true,"data":[{"groupName":"张晓项目一组","deviceNum":2,"deviceLightVOList":[{"id":31413,"deviceName":"真实单灯75813-暂且勿动-请联系张晓","dimmingValue":14,"lightCurrent":57,"voltage":227,"lightPower":5,"temperature":35,"lightWeak":801,"status":4},{"id":31414,"deviceName":"真实单灯75823-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":19,"voltage":226,"lightPower":1,"temperature":35,"lightWeak":82,"status":4}]},{"groupName":"未分组","deviceNum":3,"deviceLightVOList":[{"id":31415,"deviceName":"真实单灯75821-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":20,"voltage":227,"lightPower":1,"temperature":34,"lightWeak":1021,"status":4},{"id":31416,"deviceName":"真实单灯94402-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":18,"voltage":228,"lightPower":0,"temperature":31,"lightWeak":738,"status":4},{"id":31417,"deviceName":"真实NB单灯-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":7,"voltage":1,"lightPower":0,"temperature":null,"lightWeak":null,"status":2}]}],"message":null}
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: url: /api/hoolink-rpc/web/light/getLightList
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: content_size: 1085
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: start_time: 1563961521.89
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: request_headers: {'Content-Length': '18', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'TCmzqMFxMvLtwZqzLPbfplXOTBUjeu6gANp+CgUk7Gg4ah7PXYj2eAqJ2vzPGJvb', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:22.024000 HttpSession::request: response_time: 135
+info:: 2019-07-24 17:45:22.024000 HttpSession::request:  status_code: 200, response_time: 135 ms, response_length: 1085 bytes
+info:: 2019-07-24 17:45:22.024000 Leave HttpSession::request
+info:: 2019-07-24 17:45:22.025000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:22.025000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:22.025000 Leave hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:45:22.026000 Enter hoolinkDeviceTool::dimming
+info:: 2019-07-24 17:45:22.026000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:22.026000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:22.026000 Enter hoolinkDevice::dimming
+info:: 2019-07-24 17:45:22.026000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:22.026000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:22.026000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:22.027000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:22.027000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:22.027000 Enter Request::_log
+info:: 2019-07-24 17:45:22.028000 Leave Request::_log
+info:: 2019-07-24 17:45:22.028000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:22.028000 Leave hoolinkDevice::dimming
+info:: 2019-07-24 17:45:22.028000 Enter HttpSession::request
+info:: 2019-07-24 17:45:22.028000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/dimming
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/dimming HTTP/1.1" 200 42
+debug:: 2019-07-24 17:45:22.780000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': 'FC7858ED8BE3454CA678039074A8F41E', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: request_body: {"dimming": 25, "checkPassword": "e10adc3949ba59abbe56e057f20f883e", "projectId": 514, "lightIds": [31413, 31414, 31415, 31416, 31417]}
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: url: /api/hoolink-rpc/web/light/dimming
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: start_time: 1563961522.03
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: request_headers: {'Content-Length': '135', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'TCmzqMFxMvLtwZqzLPbfplXOTBUjeu6gANp+CgUk7Gg4ah7PXYj2eAqJ2vzPGJvb', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:22.781000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:22.782000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:22.782000 HttpSession::request: response_time: 751
+info:: 2019-07-24 17:45:22.782000 HttpSession::request:  status_code: 200, response_time: 751 ms, response_length: 42 bytes
+info:: 2019-07-24 17:45:22.782000 Leave HttpSession::request
+info:: 2019-07-24 17:45:22.782000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:22.782000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:22.783000 Leave hoolinkDeviceTool::dimming
+info:: 2019-07-24 17:45:22.783000 Enter hoolinkDeviceTool::lightPageListBizReqHistory
+info:: 2019-07-24 17:45:22.783000 Enter hoolinkDevice::lightPageListBizReqHistory
+info:: 2019-07-24 17:45:22.783000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:22.783000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:22.783000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:22.784000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:22.784000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:22.784000 Enter Request::_log
+info:: 2019-07-24 17:45:22.784000 Leave Request::_log
+info:: 2019-07-24 17:45:22.784000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:22.785000 Leave hoolinkDevice::lightPageListBizReqHistory
+info:: 2019-07-24 17:45:22.785000 Enter HttpSession::request
+info:: 2019-07-24 17:45:22.785000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/pageListBizReqHistory
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/pageListBizReqHistory HTTP/1.1" 200 1789
+debug:: 2019-07-24 17:45:22.989000 HttpSession::request: response_headers: {'content-length': '1789', 'Access-Control-Allow-Headers': '*', 'TxId': '9174B19A7DDD470287F4750968C30960', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:22.989000 HttpSession::request: request_body: {"pageSize": 10, "operationType": "\u8c03\u5149", "projectId": 514, "endTime": "", "pageNo": 1, "beginTime": ""}
+debug:: 2019-07-24 17:45:22.989000 HttpSession::request: response_content: {"status":true,"data":{"total":67,"list":[{"id":2551,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563961251643,"account":"huangfg","duration":null},{"id":2541,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563939640906,"account":"huangfg","duration":null},{"id":2530,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563879354005,"account":"huangfg","duration":null},{"id":2525,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563875050155,"account":"huangfg","duration":null},{"id":2516,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563874233093,"account":"huangfg","duration":null},{"id":2489,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563868410474,"account":"huangfg","duration":null},{"id":2484,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563867438763,"account":"huangfg","duration":null},{"id":2474,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563864274612,"account":"huangfg","duration":null},{"id":2467,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563862944447,"account":"huangfg","duration":null},{"id":2440,"operationType":"调光","content":"调光25","failNum":5,"totalNum":5,"created":1563847699583,"account":"huangfg","duration":null}],"pageNum":1,"pageSize":10,"size":10,"startRow":1,"endRow":10,"pages":7,"prePage":0,"nextPage":2,"isFirstPage":true,"isLastPage":false,"hasPreviousPage":false,"hasNextPage":true,"navigatePages":8,"navigatepageNums":[1,2,3,4,5,6,7],"navigateFirstPage":1,"navigateLastPage":7,"firstPage":1,"lastPage":7},"message":null}
+debug:: 2019-07-24 17:45:22.990000 HttpSession::request: url: /api/hoolink-rpc/web/light/pageListBizReqHistory
+debug:: 2019-07-24 17:45:22.990000 HttpSession::request: content_size: 1789
+debug:: 2019-07-24 17:45:22.990000 HttpSession::request: start_time: 1563961522.79
+debug:: 2019-07-24 17:45:22.991000 HttpSession::request: request_headers: {'Content-Length': '112', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'TCmzqMFxMvLtwZqzLPbfplXOTBUjeu6gANp+CgUk7Gg4ah7PXYj2eAqJ2vzPGJvb', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:22.991000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:22.991000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:22.991000 HttpSession::request: response_time: 203
+info:: 2019-07-24 17:45:22.992000 HttpSession::request:  status_code: 200, response_time: 203 ms, response_length: 1789 bytes
+info:: 2019-07-24 17:45:22.992000 Leave HttpSession::request
+info:: 2019-07-24 17:45:22.994000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:22.994000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:22.995000 Leave hoolinkDeviceTool::lightPageListBizReqHistory
+info:: 2019-07-24 17:45:23.013000 Enter smokeTest::login
+info:: 2019-07-24 17:45:23.013000 Enter hoolinkBaseTool::login
+info:: 2019-07-24 17:45:23.014000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.014000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.014000 Enter hoolinkBase::login
+info:: 2019-07-24 17:45:23.014000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.015000 Enter hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:45:23.015000 Leave hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:45:23.015000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.016000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.016000 Enter Request::_log
+info:: 2019-07-24 17:45:23.017000 Leave Request::_log
+info:: 2019-07-24 17:45:23.017000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.017000 Leave hoolinkBase::login
+info:: 2019-07-24 17:45:23.018000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.018000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/login
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/login HTTP/1.1" 200 6554
+debug:: 2019-07-24 17:45:23.145000 HttpSession::request: response_headers: {'content-length': '6554', 'Access-Control-Allow-Headers': '*', 'TxId': '310D15A98A444EF9ADA25B651C5691CC', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.145000 HttpSession::request: request_body: {"account": "huangfg", "password": "e10adc3949ba59abbe56e057f20f883e", "customerNo": "zhangxiao"}
+debug:: 2019-07-24 17:45:23.145000 HttpSession::request: response_content: {"status":true,"data":{"id":"706","userName":"黄锋钢","imageUrl":null,"token":"fQqOemEZSD0CCl1UdaxV83Kgx57MyEJ8WYy89GwVFmUCIDlXmkw3/uf1eFObc1Yg","firstLogin":false,"bindPhone":false,"resetPassword":false,"lastProjectId":514,"permissions":[{"title":"个人中心","value":"PERSONAL_CENTER","key":1,"children":[{"title":"基本信息","value":"ESSENTIAL_INFORMATION","key":3,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":0},{"title":"管理中心","value":"MANAGEMENT_CENTER","key":2,"children":[{"title":"用户管理","value":"USER_MANAGEMENT","key":4,"children":[],"readonly":true,"sceneId":null},{"title":"角色管理","value":"ROLE_MANAGEMENT","key":5,"children":[],"readonly":true,"sceneId":null},{"title":"项目管理","value":"PROJECT_MANAGEMENT","key":6,"children":[],"readonly":true,"sceneId":null}],"readonly":true,"sceneId":0},{"title":"应用","value":"ROAD_APPLICATION_CENTER","key":9,"children":[{"title":"智能照明","value":"ROAD_INTELLIGENT_LIGHT","key":41,"children":[{"title":"照明控制","value":"ROAD_LIGHTING_CONTROL","key":49,"children":[],"readonly":false,"sceneId":null},{"title":"定时策略","value":"ROAD_TIMING_STRATEGY","key":57,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_OPERATION_RECORD","key":145,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字监控","value":"ROAD_DIGITAL_MONITORING","key":65,"children":[{"title":"云模式","value":"ROAD_CLOUD_MODE","key":369,"children":[],"readonly":false,"sceneId":null},{"title":"本地模式","value":"ROAD_LOCAL_MODE","key":377,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字音响","value":"ROAD_DIGITAL_AUDIO","key":73,"children":[{"title":"数字音响","value":"ROAD_AUDIO","key":121,"children":[],"readonly":false,"sceneId":null},{"title":"音频文件","value":"ROAD_AUDIO_FILE","key":129,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_AUDIO_OPERA_RECORDS","key":137,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字广播","value":"ROAD_DIGITAL_BEOADCAST","key":81,"children":[{"title":"数字广播","value":"ROAD_BROADCAST","key":153,"children":[],"readonly":false,"sceneId":null},{"title":"广播记录","value":"ROAD_BROADCAST_OPERATION_RECORDS","key":161,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"信息发布","value":"ROAD_DIGITAL_SCREEN","key":89,"children":[{"title":"信息发布","value":"ROAD_SECOND_DIGITAL_SCREEN","key":217,"children":[],"readonly":false,"sceneId":null},{"title":"多媒体文件","value":"ROAD_SCREEN_MEDIA_FILE","key":225,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_SCREEN_OPERATION_RECORD","key":233,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"环境管理","value":"ROAD_DIGITAL_ENVIRONMENT","key":97,"children":[{"title":"环境管理","value":"ROAD_SECOND_DIGITAL_ENVIRONMENT","key":169,"children":[],"readonly":false,"sceneId":null},{"title":"历史数据","value":"ROAD_ENVIRONMENT_HISTORY_DATA","key":177,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"呼叫管理","value":"ROAD_DIGITAL_CALL","key":105,"children":[{"title":"呼叫管理","value":"ROAD_CALL_MANAGE","key":209,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"巡检管理","value":"ROAD_DIGITAL_PATRPL","key":113,"children":[{"title":"巡检计划","value":"ROAD_INSPECTION_PLAN","key":185,"children":[],"readonly":false,"sceneId":null},{"title":"巡检人员","value":"ROAD_INSPECTOR","key":193,"children":[],"readonly":false,"sceneId":null},{"title":"巡检记录","value":"ROAD_INSPECTION_HISTORY","key":201,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"设备","value":"ROAD_DEVICE_CENTER","key":33,"children":[{"title":"设备管理","value":"ROAD_DEVICE_MANAGER","key":17,"children":[{"title":"设备列表","value":"ROAD_DEVICE_LIST","key":25,"children":[],"readonly":false,"sceneId":null},{"title":"设备分组","value":"ROAD_DEVICE_GROUP","key":385,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"阈值管理","value":"ROAD_THRESHOLD_MANAGEMENT","key":289,"children":[{"title":"设备阈值","value":"ROAD_EQUIPMENT_THRESHOLD","key":297,"children":[],"readonly":false,"sceneId":null},{"title":"环境阈值","value":"ROAD_ENVIRONMENT_THRESHOLD","key":305,"children":[],"readonly":false,"sceneId":null},{"title":"气体阈值","value":"ROAD_GAS_THRESHOLD","key":313,"children":[],"readonly":false,"sceneId":null},{"title":"水质阈值","value":"ROAD_WATER_QUALITY_THRESHOLD","key":321,"children":[],"readonly":false,"sceneId":null},{"title":"水位阈值","value":"ROAD_WATER_LEVEL_THRESHOLD","key":329,"children":[],"readonly":false,"sceneId":null},{"title":"土壤阈值","value":"ROAD_SOIL_THRESHOLD","key":337,"children":[],"readonly":false,"sceneId":null},{"title":"特殊阈值","value":"ROAD_SPECIAL_THRESHOLD","key":345,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"运维中心","value":"ROAD_OPERATIONS_CENTER","key":241,"children":[{"title":"我的待办","value":"ROAD_MY_SCHEDULER","key":249,"children":[],"readonly":false,"sceneId":null},{"title":"工单列表","value":"ROAD_MY_WORK_ORDER","key":257,"children":[],"readonly":false,"sceneId":null},{"title":"流程配置","value":"ROAD_WORKFLOW_CONFIGURATION","key":265,"children":[],"readonly":false,"sceneId":null},{"title":"耗材管理","value":"ROAD_MATERIAL_MANAGEMENT","key":273,"children":[],"readonly":false,"sceneId":null},{"title":"运维统计","value":"ROAD_OPERATIONAL_STATISTICS","key":281,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"消息中心","value":"ROAD_MESSAGE_CENTER","key":353,"children":[],"readonly":false,"sceneId":3},{"title":"今日计划","value":"ROAD_TODAY_PLAN","key":361,"children":[],"readonly":false,"sceneId":3},{"title":"数据中心","value":"ROAD_DATA_CENTER","key":393,"children":[],"readonly":false,"sceneId":3}],"projects":[{"projectId":514,"projectNo":"8000513","projectName":"张晓","scencId":3,"modelUrl":"https://hoolink-customer.obs.cn-north-1.myhuaweicloud.com:443/201907051332111083741997"}]},"message":null}
+debug:: 2019-07-24 17:45:23.145000 HttpSession::request: url: /api/hoolink-rpc/web/login
+debug:: 2019-07-24 17:45:23.145000 HttpSession::request: content_size: 6554
+debug:: 2019-07-24 17:45:23.145000 HttpSession::request: start_time: 1563961523.02
+debug:: 2019-07-24 17:45:23.146000 HttpSession::request: request_headers: {'Content-Length': '97', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.146000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.146000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.146000 HttpSession::request: response_time: 127
+info:: 2019-07-24 17:45:23.146000 HttpSession::request:  status_code: 200, response_time: 127 ms, response_length: 6554 bytes
+info:: 2019-07-24 17:45:23.146000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.149000 Enter hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.149000 Leave hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.149000 Leave hoolinkBaseTool::login
+info:: 2019-07-24 17:45:23.149000 Leave smokeTest::login
+info:: 2019-07-24 17:45:23.150000 Enter hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:45:23.150000 Enter hoolinkDevice::getLightList
+info:: 2019-07-24 17:45:23.150000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.150000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:23.150000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:23.151000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.151000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.151000 Enter Request::_log
+info:: 2019-07-24 17:45:23.151000 Leave Request::_log
+info:: 2019-07-24 17:45:23.151000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.151000 Leave hoolinkDevice::getLightList
+info:: 2019-07-24 17:45:23.151000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.152000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/getLightList
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/getLightList HTTP/1.1" 200 1085
+debug:: 2019-07-24 17:45:23.258000 HttpSession::request: response_headers: {'content-length': '1085', 'Access-Control-Allow-Headers': '*', 'TxId': '164523BEC2814639AEB7829D40237EA1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.258000 HttpSession::request: request_body: {"projectId": 514}
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: response_content: {"status":true,"data":[{"groupName":"张晓项目一组","deviceNum":2,"deviceLightVOList":[{"id":31413,"deviceName":"真实单灯75813-暂且勿动-请联系张晓","dimmingValue":14,"lightCurrent":57,"voltage":227,"lightPower":5,"temperature":35,"lightWeak":801,"status":4},{"id":31414,"deviceName":"真实单灯75823-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":19,"voltage":226,"lightPower":1,"temperature":35,"lightWeak":82,"status":4}]},{"groupName":"未分组","deviceNum":3,"deviceLightVOList":[{"id":31415,"deviceName":"真实单灯75821-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":20,"voltage":227,"lightPower":1,"temperature":34,"lightWeak":1021,"status":4},{"id":31416,"deviceName":"真实单灯94402-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":18,"voltage":228,"lightPower":0,"temperature":31,"lightWeak":738,"status":4},{"id":31417,"deviceName":"真实NB单灯-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":7,"voltage":1,"lightPower":0,"temperature":null,"lightWeak":null,"status":2}]}],"message":null}
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: url: /api/hoolink-rpc/web/light/getLightList
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: content_size: 1085
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: start_time: 1563961523.15
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: request_headers: {'Content-Length': '18', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'fQqOemEZSD0CCl1UdaxV83Kgx57MyEJ8WYy89GwVFmUCIDlXmkw3/uf1eFObc1Yg', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.259000 HttpSession::request: response_time: 105
+info:: 2019-07-24 17:45:23.259000 HttpSession::request:  status_code: 200, response_time: 105 ms, response_length: 1085 bytes
+info:: 2019-07-24 17:45:23.259000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.260000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.260000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.260000 Leave hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:45:23.264000 Enter hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:45:23.264000 Enter hoolinkDevice::createStrategy
+info:: 2019-07-24 17:45:23.264000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.264000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:23.264000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:23.264000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.264000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.264000 Enter Request::_log
+info:: 2019-07-24 17:45:23.265000 Leave Request::_log
+info:: 2019-07-24 17:45:23.265000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.265000 Leave hoolinkDevice::createStrategy
+info:: 2019-07-24 17:45:23.265000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.265000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/create
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/create HTTP/1.1" 200 41
+debug:: 2019-07-24 17:45:23.427000 HttpSession::request: response_headers: {'content-length': '41', 'Access-Control-Allow-Headers': '*', 'TxId': 'B76904E7D5434A3D95F49D9D0C27D4E6', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.427000 HttpSession::request: request_body: {"specialDates": [], "dayOfWeeks": [1, 2, 3, 4, 5, 6, 7], "name": "strategy_32358065213", "pattern": "1", "projectId": 514, "items": [{"subItems": [{"dimmingValue": 75, "deviceIds": [31413, 31414, 31415, 31416, 31417]}], "endTime": "17:47:00", "startTime": "17:46:00"}], "description": "strategyDesc08630105555"}
+debug:: 2019-07-24 17:45:23.427000 HttpSession::request: response_content: {"status":true,"data":162,"message":null}
+debug:: 2019-07-24 17:45:23.427000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/create
+debug:: 2019-07-24 17:45:23.427000 HttpSession::request: content_size: 41
+debug:: 2019-07-24 17:45:23.428000 HttpSession::request: start_time: 1563961523.27
+debug:: 2019-07-24 17:45:23.428000 HttpSession::request: request_headers: {'Content-Length': '312', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'fQqOemEZSD0CCl1UdaxV83Kgx57MyEJ8WYy89GwVFmUCIDlXmkw3/uf1eFObc1Yg', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.428000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.428000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.428000 HttpSession::request: response_time: 161
+info:: 2019-07-24 17:45:23.428000 HttpSession::request:  status_code: 200, response_time: 161 ms, response_length: 41 bytes
+info:: 2019-07-24 17:45:23.428000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.428000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.428000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.428000 Leave hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:45:23.429000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:23.429000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.429000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.429000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:23.429000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.429000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:23.429000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:23.430000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.430000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.430000 Enter Request::_log
+info:: 2019-07-24 17:45:23.430000 Leave Request::_log
+info:: 2019-07-24 17:45:23.430000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.430000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:23.430000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.431000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 42
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '240125EE57D2481383444928B65C0C14', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: request_body: {"projectId": 514, "id": 162, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: start_time: 1563961523.43
+debug:: 2019-07-24 17:45:23.579000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'fQqOemEZSD0CCl1UdaxV83Kgx57MyEJ8WYy89GwVFmUCIDlXmkw3/uf1eFObc1Yg', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.580000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.580000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.580000 HttpSession::request: response_time: 148
+info:: 2019-07-24 17:45:23.580000 HttpSession::request:  status_code: 200, response_time: 148 ms, response_length: 42 bytes
+info:: 2019-07-24 17:45:23.580000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.580000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.580000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.580000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:23.580000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:23.581000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.581000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.581000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:23.581000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.581000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:23.581000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:23.581000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.581000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.581000 Enter Request::_log
+info:: 2019-07-24 17:45:23.581000 Leave Request::_log
+info:: 2019-07-24 17:45:23.581000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.582000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:23.582000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.582000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 53
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: response_headers: {'content-length': '53', 'Access-Control-Allow-Headers': '*', 'TxId': 'A276257F638F400FA86C38E5BE7A4989', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: request_body: {"projectId": 514, "id": 162, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: response_content: {"status":false,"data":null,"message":"系统错误"}
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: content_size: 53
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: start_time: 1563961523.58
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'fQqOemEZSD0CCl1UdaxV83Kgx57MyEJ8WYy89GwVFmUCIDlXmkw3/uf1eFObc1Yg', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.685000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.686000 HttpSession::request: response_time: 102
+info:: 2019-07-24 17:45:23.686000 HttpSession::request:  status_code: 200, response_time: 102 ms, response_length: 53 bytes
+info:: 2019-07-24 17:45:23.686000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.686000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.686000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.686000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:23.690000 Enter smokeTest::login
+info:: 2019-07-24 17:45:23.690000 Enter hoolinkBaseTool::login
+info:: 2019-07-24 17:45:23.690000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.690000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:23.690000 Enter hoolinkBase::login
+info:: 2019-07-24 17:45:23.690000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.690000 Enter hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:45:23.690000 Leave hoolinkBase::__joinParamKey__
+info:: 2019-07-24 17:45:23.690000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.691000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.691000 Enter Request::_log
+info:: 2019-07-24 17:45:23.691000 Leave Request::_log
+info:: 2019-07-24 17:45:23.691000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.691000 Leave hoolinkBase::login
+info:: 2019-07-24 17:45:23.691000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.691000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/login
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/login HTTP/1.1" 200 6554
+debug:: 2019-07-24 17:45:23.805000 HttpSession::request: response_headers: {'content-length': '6554', 'Access-Control-Allow-Headers': '*', 'TxId': 'CC4FCE63C05240E78530F9F2FBF1B456', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.806000 HttpSession::request: request_body: {"account": "huangfg", "password": "e10adc3949ba59abbe56e057f20f883e", "customerNo": "zhangxiao"}
+debug:: 2019-07-24 17:45:23.807000 HttpSession::request: response_content: {"status":true,"data":{"id":"706","userName":"黄锋钢","imageUrl":null,"token":"Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5","firstLogin":false,"bindPhone":false,"resetPassword":false,"lastProjectId":514,"permissions":[{"title":"个人中心","value":"PERSONAL_CENTER","key":1,"children":[{"title":"基本信息","value":"ESSENTIAL_INFORMATION","key":3,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":0},{"title":"管理中心","value":"MANAGEMENT_CENTER","key":2,"children":[{"title":"用户管理","value":"USER_MANAGEMENT","key":4,"children":[],"readonly":true,"sceneId":null},{"title":"角色管理","value":"ROLE_MANAGEMENT","key":5,"children":[],"readonly":true,"sceneId":null},{"title":"项目管理","value":"PROJECT_MANAGEMENT","key":6,"children":[],"readonly":true,"sceneId":null}],"readonly":true,"sceneId":0},{"title":"应用","value":"ROAD_APPLICATION_CENTER","key":9,"children":[{"title":"智能照明","value":"ROAD_INTELLIGENT_LIGHT","key":41,"children":[{"title":"照明控制","value":"ROAD_LIGHTING_CONTROL","key":49,"children":[],"readonly":false,"sceneId":null},{"title":"定时策略","value":"ROAD_TIMING_STRATEGY","key":57,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_OPERATION_RECORD","key":145,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字监控","value":"ROAD_DIGITAL_MONITORING","key":65,"children":[{"title":"云模式","value":"ROAD_CLOUD_MODE","key":369,"children":[],"readonly":false,"sceneId":null},{"title":"本地模式","value":"ROAD_LOCAL_MODE","key":377,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字音响","value":"ROAD_DIGITAL_AUDIO","key":73,"children":[{"title":"数字音响","value":"ROAD_AUDIO","key":121,"children":[],"readonly":false,"sceneId":null},{"title":"音频文件","value":"ROAD_AUDIO_FILE","key":129,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_AUDIO_OPERA_RECORDS","key":137,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"数字广播","value":"ROAD_DIGITAL_BEOADCAST","key":81,"children":[{"title":"数字广播","value":"ROAD_BROADCAST","key":153,"children":[],"readonly":false,"sceneId":null},{"title":"广播记录","value":"ROAD_BROADCAST_OPERATION_RECORDS","key":161,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"信息发布","value":"ROAD_DIGITAL_SCREEN","key":89,"children":[{"title":"信息发布","value":"ROAD_SECOND_DIGITAL_SCREEN","key":217,"children":[],"readonly":false,"sceneId":null},{"title":"多媒体文件","value":"ROAD_SCREEN_MEDIA_FILE","key":225,"children":[],"readonly":false,"sceneId":null},{"title":"操作记录","value":"ROAD_SCREEN_OPERATION_RECORD","key":233,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"环境管理","value":"ROAD_DIGITAL_ENVIRONMENT","key":97,"children":[{"title":"环境管理","value":"ROAD_SECOND_DIGITAL_ENVIRONMENT","key":169,"children":[],"readonly":false,"sceneId":null},{"title":"历史数据","value":"ROAD_ENVIRONMENT_HISTORY_DATA","key":177,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"呼叫管理","value":"ROAD_DIGITAL_CALL","key":105,"children":[{"title":"呼叫管理","value":"ROAD_CALL_MANAGE","key":209,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"巡检管理","value":"ROAD_DIGITAL_PATRPL","key":113,"children":[{"title":"巡检计划","value":"ROAD_INSPECTION_PLAN","key":185,"children":[],"readonly":false,"sceneId":null},{"title":"巡检人员","value":"ROAD_INSPECTOR","key":193,"children":[],"readonly":false,"sceneId":null},{"title":"巡检记录","value":"ROAD_INSPECTION_HISTORY","key":201,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"设备","value":"ROAD_DEVICE_CENTER","key":33,"children":[{"title":"设备管理","value":"ROAD_DEVICE_MANAGER","key":17,"children":[{"title":"设备列表","value":"ROAD_DEVICE_LIST","key":25,"children":[],"readonly":false,"sceneId":null},{"title":"设备分组","value":"ROAD_DEVICE_GROUP","key":385,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null},{"title":"阈值管理","value":"ROAD_THRESHOLD_MANAGEMENT","key":289,"children":[{"title":"设备阈值","value":"ROAD_EQUIPMENT_THRESHOLD","key":297,"children":[],"readonly":false,"sceneId":null},{"title":"环境阈值","value":"ROAD_ENVIRONMENT_THRESHOLD","key":305,"children":[],"readonly":false,"sceneId":null},{"title":"气体阈值","value":"ROAD_GAS_THRESHOLD","key":313,"children":[],"readonly":false,"sceneId":null},{"title":"水质阈值","value":"ROAD_WATER_QUALITY_THRESHOLD","key":321,"children":[],"readonly":false,"sceneId":null},{"title":"水位阈值","value":"ROAD_WATER_LEVEL_THRESHOLD","key":329,"children":[],"readonly":false,"sceneId":null},{"title":"土壤阈值","value":"ROAD_SOIL_THRESHOLD","key":337,"children":[],"readonly":false,"sceneId":null},{"title":"特殊阈值","value":"ROAD_SPECIAL_THRESHOLD","key":345,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"运维中心","value":"ROAD_OPERATIONS_CENTER","key":241,"children":[{"title":"我的待办","value":"ROAD_MY_SCHEDULER","key":249,"children":[],"readonly":false,"sceneId":null},{"title":"工单列表","value":"ROAD_MY_WORK_ORDER","key":257,"children":[],"readonly":false,"sceneId":null},{"title":"流程配置","value":"ROAD_WORKFLOW_CONFIGURATION","key":265,"children":[],"readonly":false,"sceneId":null},{"title":"耗材管理","value":"ROAD_MATERIAL_MANAGEMENT","key":273,"children":[],"readonly":false,"sceneId":null},{"title":"运维统计","value":"ROAD_OPERATIONAL_STATISTICS","key":281,"children":[],"readonly":false,"sceneId":null}],"readonly":false,"sceneId":3},{"title":"消息中心","value":"ROAD_MESSAGE_CENTER","key":353,"children":[],"readonly":false,"sceneId":3},{"title":"今日计划","value":"ROAD_TODAY_PLAN","key":361,"children":[],"readonly":false,"sceneId":3},{"title":"数据中心","value":"ROAD_DATA_CENTER","key":393,"children":[],"readonly":false,"sceneId":3}],"projects":[{"projectId":514,"projectNo":"8000513","projectName":"张晓","scencId":3,"modelUrl":"https://hoolink-customer.obs.cn-north-1.myhuaweicloud.com:443/201907051332111083741997"}]},"message":null}
+debug:: 2019-07-24 17:45:23.807000 HttpSession::request: url: /api/hoolink-rpc/web/login
+debug:: 2019-07-24 17:45:23.808000 HttpSession::request: content_size: 6554
+debug:: 2019-07-24 17:45:23.808000 HttpSession::request: start_time: 1563961523.69
+debug:: 2019-07-24 17:45:23.808000 HttpSession::request: request_headers: {'Content-Length': '97', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.809000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.809000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.810000 HttpSession::request: response_time: 114
+info:: 2019-07-24 17:45:23.810000 HttpSession::request:  status_code: 200, response_time: 114 ms, response_length: 6554 bytes
+info:: 2019-07-24 17:45:23.810000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.823000 Enter hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.823000 Leave hoolinkBaseTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.824000 Leave hoolinkBaseTool::login
+info:: 2019-07-24 17:45:23.824000 Leave smokeTest::login
+info:: 2019-07-24 17:45:23.827000 Enter hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:45:23.827000 Enter hoolinkDevice::getLightList
+info:: 2019-07-24 17:45:23.828000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.828000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:23.829000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:23.829000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.829000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.830000 Enter Request::_log
+info:: 2019-07-24 17:45:23.831000 Leave Request::_log
+info:: 2019-07-24 17:45:23.832000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.832000 Leave hoolinkDevice::getLightList
+info:: 2019-07-24 17:45:23.832000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.833000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/getLightList
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/getLightList HTTP/1.1" 200 1085
+debug:: 2019-07-24 17:45:23.945000 HttpSession::request: response_headers: {'content-length': '1085', 'Access-Control-Allow-Headers': '*', 'TxId': '00FDD7DDD51C45B08523CF9CFB2E3361', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:23.945000 HttpSession::request: request_body: {"projectId": 514}
+debug:: 2019-07-24 17:45:23.945000 HttpSession::request: response_content: {"status":true,"data":[{"groupName":"张晓项目一组","deviceNum":2,"deviceLightVOList":[{"id":31413,"deviceName":"真实单灯75813-暂且勿动-请联系张晓","dimmingValue":14,"lightCurrent":57,"voltage":227,"lightPower":5,"temperature":35,"lightWeak":801,"status":4},{"id":31414,"deviceName":"真实单灯75823-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":19,"voltage":226,"lightPower":1,"temperature":35,"lightWeak":82,"status":4}]},{"groupName":"未分组","deviceNum":3,"deviceLightVOList":[{"id":31415,"deviceName":"真实单灯75821-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":20,"voltage":227,"lightPower":1,"temperature":34,"lightWeak":1021,"status":4},{"id":31416,"deviceName":"真实单灯94402-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":18,"voltage":228,"lightPower":0,"temperature":31,"lightWeak":738,"status":4},{"id":31417,"deviceName":"真实NB单灯-暂且勿动-请联系张晓","dimmingValue":0,"lightCurrent":7,"voltage":1,"lightPower":0,"temperature":null,"lightWeak":null,"status":2}]}],"message":null}
+debug:: 2019-07-24 17:45:23.946000 HttpSession::request: url: /api/hoolink-rpc/web/light/getLightList
+debug:: 2019-07-24 17:45:23.946000 HttpSession::request: content_size: 1085
+debug:: 2019-07-24 17:45:23.946000 HttpSession::request: start_time: 1563961523.83
+debug:: 2019-07-24 17:45:23.946000 HttpSession::request: request_headers: {'Content-Length': '18', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:23.947000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:23.947000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:23.947000 HttpSession::request: response_time: 111
+info:: 2019-07-24 17:45:23.947000 HttpSession::request:  status_code: 200, response_time: 111 ms, response_length: 1085 bytes
+info:: 2019-07-24 17:45:23.947000 Leave HttpSession::request
+info:: 2019-07-24 17:45:23.949000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.949000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:23.949000 Leave hoolinkDeviceTool::getLightList
+info:: 2019-07-24 17:45:23.950000 Enter hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:45:23.950000 Enter hoolinkDevice::createStrategy
+info:: 2019-07-24 17:45:23.951000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.951000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:23.951000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:23.951000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:23.951000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:23.951000 Enter Request::_log
+info:: 2019-07-24 17:45:23.952000 Leave Request::_log
+info:: 2019-07-24 17:45:23.953000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:23.953000 Leave hoolinkDevice::createStrategy
+info:: 2019-07-24 17:45:23.953000 Enter HttpSession::request
+info:: 2019-07-24 17:45:23.953000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/create
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/create HTTP/1.1" 200 41
+debug:: 2019-07-24 17:45:24.062000 HttpSession::request: response_headers: {'content-length': '41', 'Access-Control-Allow-Headers': '*', 'TxId': '452CF37D13664BBA8ACA06110F141104', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:24.062000 HttpSession::request: request_body: {"specialDates": [], "dayOfWeeks": [1, 2, 3, 4, 5, 6, 7], "name": "strategy_15700688653", "pattern": "1", "projectId": 514, "items": [{"subItems": [{"dimmingValue": 75, "deviceIds": [31413, 31414, 31415, 31416, 31417]}], "endTime": "17:47:00", "startTime": "17:46:00"}], "description": "strategyDesc58544425173"}
+debug:: 2019-07-24 17:45:24.062000 HttpSession::request: response_content: {"status":true,"data":163,"message":null}
+debug:: 2019-07-24 17:45:24.062000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/create
+debug:: 2019-07-24 17:45:24.063000 HttpSession::request: content_size: 41
+debug:: 2019-07-24 17:45:24.063000 HttpSession::request: start_time: 1563961523.95
+debug:: 2019-07-24 17:45:24.063000 HttpSession::request: request_headers: {'Content-Length': '312', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:24.063000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:24.063000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:24.063000 HttpSession::request: response_time: 108
+info:: 2019-07-24 17:45:24.063000 HttpSession::request:  status_code: 200, response_time: 108 ms, response_length: 41 bytes
+info:: 2019-07-24 17:45:24.063000 Leave HttpSession::request
+info:: 2019-07-24 17:45:24.064000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.064000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.064000 Leave hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:45:24.064000 Enter hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:45:24.064000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:24.064000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:24.064000 Enter hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:45:24.064000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.064000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:24.064000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:24.065000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:24.065000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:24.065000 Enter Request::_log
+info:: 2019-07-24 17:45:24.065000 Leave Request::_log
+info:: 2019-07-24 17:45:24.065000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.065000 Leave hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:45:24.066000 Enter HttpSession::request
+info:: 2019-07-24 17:45:24.066000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/updateStatus
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/updateStatus HTTP/1.1" 200 42
+debug:: 2019-07-24 17:45:24.359000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '17C2E58D4D534D5CBE754DDABFD8D93C', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:24.359000 HttpSession::request: request_body: {"status": true, "checkPassword": "e10adc3949ba59abbe56e057f20f883e", "projectId": 514, "id": 163}
+debug:: 2019-07-24 17:45:24.359000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:45:24.359000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/updateStatus
+debug:: 2019-07-24 17:45:24.360000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:45:24.360000 HttpSession::request: start_time: 1563961524.07
+debug:: 2019-07-24 17:45:24.360000 HttpSession::request: request_headers: {'Content-Length': '98', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:24.360000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:24.361000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:24.361000 HttpSession::request: response_time: 292
+info:: 2019-07-24 17:45:24.361000 HttpSession::request:  status_code: 200, response_time: 292 ms, response_length: 42 bytes
+info:: 2019-07-24 17:45:24.361000 Leave HttpSession::request
+info:: 2019-07-24 17:45:24.363000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.363000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.364000 Leave hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:45:24.364000 Enter hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:45:24.365000 Enter hoolinkDevice::createStrategy
+info:: 2019-07-24 17:45:24.365000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.365000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:24.365000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:24.365000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:24.366000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:24.366000 Enter Request::_log
+info:: 2019-07-24 17:45:24.367000 Leave Request::_log
+info:: 2019-07-24 17:45:24.367000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.367000 Leave hoolinkDevice::createStrategy
+info:: 2019-07-24 17:45:24.368000 Enter HttpSession::request
+info:: 2019-07-24 17:45:24.368000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/create
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/create HTTP/1.1" 200 41
+debug:: 2019-07-24 17:45:24.462000 HttpSession::request: response_headers: {'content-length': '41', 'Access-Control-Allow-Headers': '*', 'TxId': 'D0427878591B499DA97A5692D75FC9FE', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:24.462000 HttpSession::request: request_body: {"specialDates": [], "dayOfWeeks": [1, 2, 3, 4, 5, 6, 7], "name": "strategy_45093065174", "pattern": "1", "projectId": 514, "items": [{"subItems": [{"dimmingValue": 25, "deviceIds": [31413, 31414, 31415, 31416, 31417]}], "endTime": "17:47:00", "startTime": "17:46:00"}], "description": "strategyDesc89694423383"}
+debug:: 2019-07-24 17:45:24.462000 HttpSession::request: response_content: {"status":true,"data":164,"message":null}
+debug:: 2019-07-24 17:45:24.463000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/create
+debug:: 2019-07-24 17:45:24.463000 HttpSession::request: content_size: 41
+debug:: 2019-07-24 17:45:24.463000 HttpSession::request: start_time: 1563961524.37
+debug:: 2019-07-24 17:45:24.464000 HttpSession::request: request_headers: {'Content-Length': '312', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:24.464000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:24.464000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:24.464000 HttpSession::request: response_time: 93
+info:: 2019-07-24 17:45:24.464000 HttpSession::request:  status_code: 200, response_time: 93 ms, response_length: 41 bytes
+info:: 2019-07-24 17:45:24.465000 Leave HttpSession::request
+info:: 2019-07-24 17:45:24.465000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.465000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.466000 Leave hoolinkDeviceTool::createStrategy
+info:: 2019-07-24 17:45:24.466000 Enter hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:45:24.466000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:24.466000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:24.467000 Enter hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:45:24.467000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.467000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:24.467000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:24.467000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:24.468000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:24.468000 Enter Request::_log
+info:: 2019-07-24 17:45:24.469000 Leave Request::_log
+info:: 2019-07-24 17:45:24.469000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.469000 Leave hoolinkDevice::updateStrategyStatus
+info:: 2019-07-24 17:45:24.470000 Enter HttpSession::request
+info:: 2019-07-24 17:45:24.470000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/updateStatus
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/updateStatus HTTP/1.1" 200 328
+debug:: 2019-07-24 17:45:24.605000 HttpSession::request: response_headers: {'content-length': '328', 'Access-Control-Allow-Headers': '*', 'TxId': 'EFC2F7C538904AEB897795E478EF9DDE', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:24.605000 HttpSession::request: request_body: {"status": true, "checkPassword": "e10adc3949ba59abbe56e057f20f883e", "projectId": 514, "id": 164}
+debug:: 2019-07-24 17:45:24.606000 HttpSession::request: response_content: {"status":true,"data":[{"name":"strategy_15700688653","pattern":1,"patternNames":["每天"],"conflictTimes":[{"startTime":"17:46","endTime":"17:47","status":true}],"devices":[{"id":31413,"status":true},{"id":31414,"status":true},{"id":31415,"status":true},{"id":31416,"status":true},{"id":31417,"status":true}]}],"message":null}
+debug:: 2019-07-24 17:45:24.606000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/updateStatus
+debug:: 2019-07-24 17:45:24.606000 HttpSession::request: content_size: 328
+debug:: 2019-07-24 17:45:24.606000 HttpSession::request: start_time: 1563961524.47
+debug:: 2019-07-24 17:45:24.607000 HttpSession::request: request_headers: {'Content-Length': '98', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:24.607000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:24.607000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:24.607000 HttpSession::request: response_time: 134
+info:: 2019-07-24 17:45:24.608000 HttpSession::request:  status_code: 200, response_time: 134 ms, response_length: 328 bytes
+info:: 2019-07-24 17:45:24.608000 Leave HttpSession::request
+info:: 2019-07-24 17:45:24.609000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.609000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.609000 Leave hoolinkDeviceTool::updateStrategyStatus
+info:: 2019-07-24 17:45:24.610000 Enter hoolinkDeviceTool::getStrategyConflictDevice
+info:: 2019-07-24 17:45:24.610000 Enter hoolinkDevice::getStrategyConflictDevice
+info:: 2019-07-24 17:45:24.611000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.611000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:24.611000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:24.612000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:24.612000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:24.613000 Enter Request::_log
+info:: 2019-07-24 17:45:24.614000 Leave Request::_log
+info:: 2019-07-24 17:45:24.614000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.614000 Leave hoolinkDevice::getStrategyConflictDevice
+info:: 2019-07-24 17:45:24.614000 Enter HttpSession::request
+info:: 2019-07-24 17:45:24.615000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/getConflictDevice
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/getConflictDevice HTTP/1.1" 200 716
+debug:: 2019-07-24 17:45:24.726000 HttpSession::request: response_headers: {'content-length': '716', 'Access-Control-Allow-Headers': '*', 'TxId': '16DB5CBB0E2143B8800D7BF5C67DC74A', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:24.726000 HttpSession::request: request_body: {"projectId": 514, "devices": [{"status": true, "id": 31413}, {"status": true, "id": 31414}, {"status": true, "id": 31415}, {"status": true, "id": 31416}, {"status": true, "id": 31417}]}
+debug:: 2019-07-24 17:45:24.726000 HttpSession::request: response_content: {"status":true,"data":[{"id":"0未分组","value":0,"title":"未分组(3)","devices":[{"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"id":31415,"type":7,"status":true},{"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"id":31416,"type":7,"status":true},{"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"id":31417,"type":7,"status":true}]},{"id":"35张晓项目一组","value":35,"title":"张晓项目一组(2)","devices":[{"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"id":31413,"type":7,"status":true},{"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"id":31414,"type":7,"status":true}]}],"message":null}
+debug:: 2019-07-24 17:45:24.726000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/getConflictDevice
+debug:: 2019-07-24 17:45:24.727000 HttpSession::request: content_size: 716
+debug:: 2019-07-24 17:45:24.727000 HttpSession::request: start_time: 1563961524.62
+debug:: 2019-07-24 17:45:24.727000 HttpSession::request: request_headers: {'Content-Length': '186', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:24.727000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:24.727000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:24.727000 HttpSession::request: response_time: 111
+info:: 2019-07-24 17:45:24.727000 HttpSession::request:  status_code: 200, response_time: 111 ms, response_length: 716 bytes
+info:: 2019-07-24 17:45:24.727000 Leave HttpSession::request
+info:: 2019-07-24 17:45:24.728000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.728000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.728000 Leave hoolinkDeviceTool::getStrategyConflictDevice
+info:: 2019-07-24 17:45:24.728000 Enter hoolinkDeviceTool::forcedStrategyToEnable
+info:: 2019-07-24 17:45:24.728000 Enter hoolinkDevice::forcedStrategyToEnable
+info:: 2019-07-24 17:45:24.728000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.728000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:24.729000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:24.729000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:24.729000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:24.729000 Enter Request::_log
+info:: 2019-07-24 17:45:24.729000 Leave Request::_log
+info:: 2019-07-24 17:45:24.729000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.729000 Leave hoolinkDevice::forcedStrategyToEnable
+info:: 2019-07-24 17:45:24.729000 Enter HttpSession::request
+info:: 2019-07-24 17:45:24.730000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/forcedToEnable
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/forcedToEnable HTTP/1.1" 200 42
+debug:: 2019-07-24 17:45:24.943000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': 'EEAF4821E1D0455EA74CC1122AC23AB6', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:24.943000 HttpSession::request: request_body: {"projectId": 514, "id": 164, "checkPassword": "123456"}
+debug:: 2019-07-24 17:45:24.943000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:45:24.944000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/forcedToEnable
+debug:: 2019-07-24 17:45:24.944000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:45:24.944000 HttpSession::request: start_time: 1563961524.73
+debug:: 2019-07-24 17:45:24.944000 HttpSession::request: request_headers: {'Content-Length': '56', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:24.944000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:24.945000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:24.945000 HttpSession::request: response_time: 213
+info:: 2019-07-24 17:45:24.945000 HttpSession::request:  status_code: 200, response_time: 213 ms, response_length: 42 bytes
+info:: 2019-07-24 17:45:24.945000 Leave HttpSession::request
+info:: 2019-07-24 17:45:24.946000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.946000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:24.947000 Leave hoolinkDeviceTool::forcedStrategyToEnable
+info:: 2019-07-24 17:45:24.947000 Enter hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:45:24.947000 Enter hoolinkDevice::getStrategy
+info:: 2019-07-24 17:45:24.947000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.948000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:24.948000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:24.948000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:24.948000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:24.949000 Enter Request::_log
+info:: 2019-07-24 17:45:24.949000 Leave Request::_log
+info:: 2019-07-24 17:45:24.950000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:24.950000 Leave hoolinkDevice::getStrategy
+info:: 2019-07-24 17:45:24.950000 Enter HttpSession::request
+info:: 2019-07-24 17:45:24.950000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/get
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/get HTTP/1.1" 200 2441
+debug:: 2019-07-24 17:45:25.069000 HttpSession::request: response_headers: {'content-length': '2441', 'Access-Control-Allow-Headers': '*', 'TxId': '6922EB5F387B478F8A12948DC6F6BA4E', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:25.069000 HttpSession::request: request_body: {"projectId": 514, "data": 163}
+debug:: 2019-07-24 17:45:25.070000 HttpSession::request: response_content: {"status":true,"data":{"name":"strategy_15700688653","description":"strategyDesc58544425173","status":false,"pattern":1,"dayOfWeeks":null,"specialDates":null,"items":[{"startTime":"17:46:00","endTime":"17:47:00","subItems":[{"deviceIds":[31413,31414,31415,31416,31417],"deviceNames":["真实单灯75813-暂且勿动-请联系张晓","真实单灯75823-暂且勿动-请联系张晓","真实单灯75821-暂且勿动-请联系张晓","真实单灯94402-暂且勿动-请联系张晓","真实NB单灯-暂且勿动-请联系张晓"],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}],"dimmingValue":75}]}],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}]},"message":null}
+debug:: 2019-07-24 17:45:25.070000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/get
+debug:: 2019-07-24 17:45:25.071000 HttpSession::request: content_size: 2441
+debug:: 2019-07-24 17:45:25.071000 HttpSession::request: start_time: 1563961524.95
+debug:: 2019-07-24 17:45:25.072000 HttpSession::request: request_headers: {'Content-Length': '31', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:25.072000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:25.073000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:25.073000 HttpSession::request: response_time: 118
+info:: 2019-07-24 17:45:25.073000 HttpSession::request:  status_code: 200, response_time: 118 ms, response_length: 2441 bytes
+info:: 2019-07-24 17:45:25.074000 Leave HttpSession::request
+info:: 2019-07-24 17:45:25.078000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.079000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.079000 Leave hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:45:25.080000 Enter hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:45:25.080000 Enter hoolinkDevice::getStrategy
+info:: 2019-07-24 17:45:25.081000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:25.081000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:25.082000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:25.082000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:25.082000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:25.083000 Enter Request::_log
+info:: 2019-07-24 17:45:25.085000 Leave Request::_log
+info:: 2019-07-24 17:45:25.085000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:25.086000 Leave hoolinkDevice::getStrategy
+info:: 2019-07-24 17:45:25.087000 Enter HttpSession::request
+info:: 2019-07-24 17:45:25.087000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/get
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/get HTTP/1.1" 200 2440
+debug:: 2019-07-24 17:45:25.181000 HttpSession::request: response_headers: {'content-length': '2440', 'Access-Control-Allow-Headers': '*', 'TxId': '2272A40961754A05BEA5F97EDDF8E9C8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:25.181000 HttpSession::request: request_body: {"projectId": 514, "data": 164}
+debug:: 2019-07-24 17:45:25.182000 HttpSession::request: response_content: {"status":true,"data":{"name":"strategy_45093065174","description":"strategyDesc89694423383","status":true,"pattern":1,"dayOfWeeks":null,"specialDates":null,"items":[{"startTime":"17:46:00","endTime":"17:47:00","subItems":[{"deviceIds":[31413,31414,31415,31416,31417],"deviceNames":["真实单灯75813-暂且勿动-请联系张晓","真实单灯75823-暂且勿动-请联系张晓","真实单灯75821-暂且勿动-请联系张晓","真实单灯94402-暂且勿动-请联系张晓","真实NB单灯-暂且勿动-请联系张晓"],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}],"dimmingValue":25}]}],"selectedDevice":[{"key":null,"title":"未分组","value":null,"deviceSize":3,"children":[{"key":31415,"title":"真实单灯75821-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31416,"title":"真实单灯94402-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31417,"title":"真实NB单灯-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]},{"key":null,"title":"张晓项目一组","value":null,"deviceSize":2,"children":[{"key":31413,"title":"真实单灯75813-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null},{"key":31414,"title":"真实单灯75823-暂且勿动-请联系张晓","value":null,"type":7,"longitude":null,"latitude":null,"x":null,"y":null,"z":null}]}]},"message":null}
+debug:: 2019-07-24 17:45:25.182000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/get
+debug:: 2019-07-24 17:45:25.182000 HttpSession::request: content_size: 2440
+debug:: 2019-07-24 17:45:25.182000 HttpSession::request: start_time: 1563961525.09
+debug:: 2019-07-24 17:45:25.182000 HttpSession::request: request_headers: {'Content-Length': '31', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:25.183000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:25.183000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:25.183000 HttpSession::request: response_time: 94
+info:: 2019-07-24 17:45:25.183000 HttpSession::request:  status_code: 200, response_time: 94 ms, response_length: 2440 bytes
+info:: 2019-07-24 17:45:25.183000 Leave HttpSession::request
+info:: 2019-07-24 17:45:25.185000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.185000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.185000 Leave hoolinkDeviceTool::getStrategy
+info:: 2019-07-24 17:45:25.186000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:25.186000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:25.186000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:25.186000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:25.186000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:25.186000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:25.186000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:25.187000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:25.187000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:25.187000 Enter Request::_log
+info:: 2019-07-24 17:45:25.188000 Leave Request::_log
+info:: 2019-07-24 17:45:25.188000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:25.188000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:25.188000 Enter HttpSession::request
+info:: 2019-07-24 17:45:25.188000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 42
+debug:: 2019-07-24 17:45:25.298000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '3A0FC2E3A1D849B9A90323BD4EDA8549', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:25.299000 HttpSession::request: request_body: {"projectId": 514, "id": 163, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:45:25.299000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:45:25.300000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:45:25.300000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:45:25.300000 HttpSession::request: start_time: 1563961525.19
+debug:: 2019-07-24 17:45:25.301000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:25.301000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:25.302000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:25.302000 HttpSession::request: response_time: 110
+info:: 2019-07-24 17:45:25.303000 HttpSession::request:  status_code: 200, response_time: 110 ms, response_length: 42 bytes
+info:: 2019-07-24 17:45:25.304000 Leave HttpSession::request
+info:: 2019-07-24 17:45:25.305000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.305000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.305000 Leave hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:25.306000 Enter hoolinkDeviceTool::deleteStrategy
+info:: 2019-07-24 17:45:25.306000 Enter Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:25.306000 Leave Lib::get_pwd_need_md5
+info:: 2019-07-24 17:45:25.306000 Enter hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:25.306000 Enter HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:25.307000 Enter base::__joinParamKey__
+info:: 2019-07-24 17:45:25.307000 Leave base::__joinParamKey__
+info:: 2019-07-24 17:45:25.307000 Enter HttpRequest::create_session
+info:: 2019-07-24 17:45:25.307000 Leave HttpRequest::create_session
+info:: 2019-07-24 17:45:25.307000 Enter Request::_log
+info:: 2019-07-24 17:45:25.308000 Leave Request::_log
+info:: 2019-07-24 17:45:25.309000 Leave HttpRequest::fun_wrapper
+info:: 2019-07-24 17:45:25.309000 Leave hoolinkDevice::deleteStrategy
+info:: 2019-07-24 17:45:25.309000 Enter HttpSession::request
+info:: 2019-07-24 17:45:25.309000 HttpSession::request:  Start to post http://114.116.163.85:9997/api/hoolink-rpc/web/light/strategy/delete
+Starting new HTTP connection (1): 114.116.163.85
+http://114.116.163.85:9997 "POST /api/hoolink-rpc/web/light/strategy/delete HTTP/1.1" 200 42
+debug:: 2019-07-24 17:45:25.461000 HttpSession::request: response_headers: {'content-length': '42', 'Access-Control-Allow-Headers': '*', 'TxId': '492A3C249DAD4EF39B855FFCF03389C1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': '*', 'Content-Type': 'application/json; charset=utf-8'}
+debug:: 2019-07-24 17:45:25.461000 HttpSession::request: request_body: {"projectId": 514, "id": 164, "checkPassword": "e10adc3949ba59abbe56e057f20f883e"}
+debug:: 2019-07-24 17:45:25.461000 HttpSession::request: response_content: {"status":true,"data":null,"message":null}
+debug:: 2019-07-24 17:45:25.461000 HttpSession::request: url: /api/hoolink-rpc/web/light/strategy/delete
+debug:: 2019-07-24 17:45:25.461000 HttpSession::request: content_size: 42
+debug:: 2019-07-24 17:45:25.462000 HttpSession::request: start_time: 1563961525.31
+debug:: 2019-07-24 17:45:25.462000 HttpSession::request: request_headers: {'Content-Length': '82', 'Accept-Encoding': 'gzip, deflate', 'X-Token': u'Bk0Fvl7bKfbjiwwQUpyEs63E9+Th2P1zvQkF5iPijmg36UPnxMjISnNCoK/jE9T5', 'Pid': '514', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'Content-Type': 'application/json'}
+debug:: 2019-07-24 17:45:25.462000 HttpSession::request: status_code: 200
+debug:: 2019-07-24 17:45:25.462000 HttpSession::request: method: post
+debug:: 2019-07-24 17:45:25.463000 HttpSession::request: response_time: 151
+info:: 2019-07-24 17:45:25.463000 HttpSession::request:  status_code: 200, response_time: 151 ms, response_length: 42 bytes
+info:: 2019-07-24 17:45:25.463000 Leave HttpSession::request
+info:: 2019-07-24 17:45:25.464000 Enter hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.464000 Leave hoolinkDeviceTool::__dealwithCommResp__
+info:: 2019-07-24 17:45:25.464000 Leave hoolinkDeviceTool::deleteStrategy

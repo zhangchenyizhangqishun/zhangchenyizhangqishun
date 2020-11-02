@@ -1,0 +1,6 @@
+caseId,desc,isRun,account,password,customerNo,userSex,expectedMessage
+1001,修改性别失败：性别字段为空,True,huangfg,888888,1001,"",参数错误
+1002,修改性别成功,True,huangfg,888888,1001,False,None
+1003,修改性别失败：参数错误数字,True,huangfg,888888,1001,123456789,Parameter is not valid for operation [hoolink-rpc.web.BaseController.updateSex]. Parameter is [sex]. Processor is [body].
+1004,修改性别失败：参数错误特殊字符,True,huangfg,888888,1001,***%%%￥￥￥@@@@！！！！,Parameter is not valid for operation [hoolink-rpc.web.BaseController.updateSex]. Parameter is [sex]. Processor is [body].
+1005,修改性别失败：参数错误字符,True,huangfg,888888,1001,huangfg,Parameter is not valid for operation [hoolink-rpc.web.BaseController.updateSex]. Parameter is [sex]. Processor is [body].

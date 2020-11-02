@@ -1,0 +1,4 @@
+caseId,desc,isRun,account,password,projectId,poleId,expectedMessage
+1001,添加显示屏poleId不存在,True,test_hfg,888888,999999,999999,信息发布添加失败
+1002,添加摄像头poleId上已经有显示屏,False,test_hfg,888888,517,517,"信息发布添加失败,数据已存在"
+1003,添加摄像头poleId上无显示屏,False,test_hfg,888888,489,489,信息发布添加成功

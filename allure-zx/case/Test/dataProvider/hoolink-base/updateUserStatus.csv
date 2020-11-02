@@ -1,0 +1,8 @@
+caseId,desc,isRun,account,password,customerNo,userId,status,expectedMessage
+1001,启用不存在的用户,True,huangfg,888888,1001,99999,True,用户不存在
+1002,禁用不存在的用户,True,huangfg,888888,1001,99999,False,用户不存在
+1003,禁用用户成功,True,huangfg,888888,1001,280,False,None
+1004,启用用户成功,True,huangfg,888888,1001,943,True,None
+1005,启用用户失败：用户不允许为空,True,huangfg,888888,1001,"",True,参数错误：用户不允许为空
+1006,启用用户失败：状态不允许为空,True,huangfg,888888,1001,279,"",参数错误：状态不允许为空
+1007,启用用户失败：启用角色被禁用的用户,True,huangfg,888888,1001,279,True,角色被禁用

@@ -1,0 +1,11 @@
+caseId,desc,isRun,account,password,customerNo,fuzzyName,fuzzyPhone,fuzzyRole,projectId,status,expectedMessage
+1001,查找禁用用户,True,huangfg,888888,1001,"","","","",False,""
+1002,查找启用用户,True,huangfg,888888,1001,"","","","",True,""
+1003,精确查找tester_4576用户,True,huangfg,888888,1001,tester_4576,"","","","",""
+1004,模糊查找带tester用户,True,huangfg,888888,1001,tester,"","","","",""
+1005,精确查找角色为roleName48772433859用户,True,huangfg,888888,1001,"","",roleName48772433859,"","",""
+1006,模糊查找角色带roleName用户,True,huangfg,888888,1001,"","",roleName,"","",""
+1007,模糊查找带tester用户并且用户状态启用,True,huangfg,888888,1001,tester,"","","",True,""
+1008,模糊查找角色带roleName用户并且用户状态启用,True,huangfg,888888,1001,"","",roleName,"",True,""
+1009,模糊查找带tester用户并且用户状态禁用,True,huangfg,888888,1001,tester,"","","",False,""
+1010,模糊查找角色带roleName用户并且用户状态禁用,True,huangfg,888888,1001,"","",roleName,"",False,""

@@ -1,0 +1,5 @@
+caseId,desc,isRun,account,password,status,roleName,expectedMessage
+1001,查询角色列表：模糊查询,True,test_huangfg,123456,False,RN,None
+1002,查询角色列表：启用状态,True,test_huangfg,123456,True,"",None
+1003,查询角色列表：精确查询,True,test_huangfg,123456,False,RN79729543666,None
+1004,查询角色列表：禁用状态,True,test_huangfg,123456,False,"",None

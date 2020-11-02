@@ -1,0 +1,6 @@
+caseId,desc,isRun,account,password,userId,expectedMessage
+1001,用户正常退出（userId不传代表自己）,True,test_hfg,888888,"",缓存操作成功
+1002,用户登录，可以退出其他已登录用户（接口没校验）,False,test_hfg,888888,1,缓存操作成功
+1003,用户登录，退出存在但未登录用户,True,test_hfg,888888,120,删除登录用户信息缓存数据操作失败
+1004,用户登录，退出不存在用户,True,test_hfg,888888,99999,登录异常
+1005,启用已被非禁用状态的用户(接口没校验),False,test_hfg,888888,115,用户启用失败

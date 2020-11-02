@@ -1,0 +1,8 @@
+caseId,desc,isRun,account,password,customerName,projectName,expectedMessage
+1001,查询设备录入记录：根据公司名称精确查询,True,test_huangfg,123456,音乐公园,"",None
+1002,查询设备录入记录：根据公司名称模糊查询,True,test_huangfg,123456,音乐,"",None
+1008,查询设备录入记录：根据项目名称精确查询,True,test_huangfg,123456,"",晶日-道路/工厂,None
+1008,查询设备录入记录：根据项目名称模糊查询,True,test_huangfg,123456,"",道路项目,None
+1008,查询设备录入记录：根据公司名称和项目名称精确查询,True,test_huangfg,123456,超级厉害公司,超级社区,None
+1008,查询设备录入记录：查询所有,True,test_huangfg,123456,"","",None
+1008,查询设备录入记录：查询条件对应记录不存在,False,test_huangfg,123456,超级厉害公司1,超级社区,None

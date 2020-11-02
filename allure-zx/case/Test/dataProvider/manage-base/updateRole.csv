@@ -1,0 +1,9 @@
+caseId,desc,isRun,account,password,roleId,roleName,roleDesc,roleType,menuList,permissionFlag,expectedMessage
+1001,更新角色失败：角色id为空,True,test_huangfg,123456,"",random,random,True,"['EDM系统','部门资源','管理中心','用户管理']",1,参数错误
+1002,更新角色成功：角色描述为空,True,test_huangfg,123456,225,random,"",False,"['EDM系统','缓存库','管理中心','角色管理']",1,None
+1003,更新角色成功：random代表随机,True,test_huangfg,123456,225,random,random,True,"['EDM系统','资源库','hoolink管理平台','客户管理']",1,None
+1004,更新角色失败：角色名称为空,True,test_huangfg,123456,225,"",random,False,"['EDM系统','部门资源','hoolink管理平台','项目管理']",1,参数错误
+1005,更新角色失败：角色类型为空,True,test_huangfg,123456,225,random,random,"","['EDM系统','我的收藏','hoolink管理平台','设备管理','设备列表']",1,参数错误
+1006,更新角色失败：角色名称重复,True,test_huangfg,123456,225,RN31903917252,random,True,"['EDM系统','部门资源','hoolink管理平台','设备管理','设备模型']",1,角色名称重复
+1007,更新角色失败：（接口未做校验角色id不存在）,True,test_huangfg,123456,999999,random,random,False,"['EDM系统','资源库','hoolink管理平台','设备管理','设备固件']",1,None
+1008,更新角色失败：（接口未做校验角色菜单未勾选）,True,test_huangfg,123456,222,random,random,True,"['EDM系统','缓存库','hoolink管理平台','设备管理','设备质保']",0,None

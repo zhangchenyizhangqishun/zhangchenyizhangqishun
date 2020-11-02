@@ -1,0 +1,16 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <CsvCodeStyleSettings>
+      <option name="SPACE_BEFORE_SEPARATOR" value="true" />
+      <option name="SPACE_AFTER_SEPARATOR" value="true" />
+      <option name="TRIM_LEADING_WHITE_SPACES" value="true" />
+      <option name="TRIM_TRAILING_WHITE_SPACES" value="true" />
+      <option name="LEADING_WHITE_SPACES" value="true" />
+      <option name="ENABLE_WIDE_CHARACTER_DETECTION" value="true" />
+      <option name="TREAT_AMBIGUOUS_CHARACTERS_AS_WIDE" value="true" />
+    </CsvCodeStyleSettings>
+    <codeStyleSettings language="csv">
+      <option name="WRAP_ON_TYPING" value="1" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>

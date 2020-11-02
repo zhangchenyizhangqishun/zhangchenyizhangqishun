@@ -1,0 +1,7 @@
+caseId,desc,isRun,account,password,customerNo,roleId,status,expectedMessage
+1001,更改角色状态失败：角色id不存在（接口未做校验）,True,huangfg,888888,1001,99999,True,None
+1002,更改角色状态失败：角色为空,True,huangfg,888888,1001,"",False,参数错误：角色ID不能为空
+1003,更改角色状态失败：角色id格式错误,True,huangfg,888888,1001,samTang,False,Parameter is not valid for operation [hoolink-rpc.web.RoleController.updateStatus]. Parameter is [roleStatusVO]. Processor is [body].
+1004,更改角色状态失败：状态为空,True,huangfg,888888,1001,279,"",参数错误：状态不能为空
+1005,更改角色状态成功,True,huangfg,888888,1001,279,False,None
+1005,更改角色状态失败：状态格式错误,True,huangfg,888888,1001,279,samTang,Parameter is not valid for operation [hoolink-rpc.web.RoleController.updateStatus]. Parameter is [roleStatusVO]. Processor is [body].

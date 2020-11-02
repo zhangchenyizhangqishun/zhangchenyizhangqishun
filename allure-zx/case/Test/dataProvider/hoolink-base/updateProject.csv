@@ -1,0 +1,11 @@
+caseId,desc,isRun,account,password,projectId,sceneId,projectContacts,projectPhone,projectName,projectDesc,projectLogoId,projectViewId,modelAddr,modelGroup,modelExist,fileId,expectedMessage
+1001,更新项目场景,False,test_hfg,888888,226,8,"","","","","","","","","","",项目更新成功
+1002,更新项目联系人及联系电话,False,test_hfg,888888,226,"",trancy,13567100270,"","","","","","","","",项目更新成功
+1003,更新项目名称及描述,False,test_hfg,888888,226,"","","",test_project,project_desc,"","","","","","",项目更新成功
+1004,更新项目logo及鸟瞰图,False,test_hfg,888888,226,"","","","","",1558,1559,"","","","",项目更新成功
+1005,更新项目模型,False,test_hfg,888888,226,"","","","","","","","","","","",项目更新成功
+1006,更新项目附件,False,test_hfg,888888,226,"","","","","","","","","","","",项目更新成功
+1007,更新项目场景（接口未判断场景id是否存在）,False,test_hfg,888888,226,99999,"","","","","","","","","","",项目更新成功
+1008,更新项目logo及鸟瞰图(logid，viewid不存在接口未做校验),True,test_hfg,888888,226,"","","","","",99999,99999,"","","","",项目更新成功
+1009,更新项目模型,True,test_hfg,888888,226,"","","","","","","",jingRi,school,"1,2","",项目更新成功
+1010,更新项目附件,True,test_hfg,888888,226,"","","","","","","",school,factory,"1,2",1558,项目更新成功

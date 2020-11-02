@@ -1,0 +1,6 @@
+caseId,desc,isRun,account,password,customerNo,userName,expectedMessage
+1001,修改用户名失败：姓名为空,True,huangfg,888888,1001,"",参数错误：姓名不允许为空
+1002,修改用户名成功,True,huangfg,888888,1001,huangjunyi,None
+1003,修改用户名失败：参数错误：姓名应该在1-15字符之间，创建用户有做校验，修改用户没有做校验,True,huangfg,888888,1001,123456789.012345678901234567890.1234567890,None
+1004,删除用户失败：删除已经被删除的用户(接口没校验),True,huangfg,888888,1001,***%%%￥￥￥@@@@！！！！,None
+1005,删除用户失败：参数格式错误,False,huangfg,888888,1001,huangfg,Parameter is not valid for operation [hoolink-rpc.web.UserController.removeUser]. Parameter is [userId]. Processor is [body].

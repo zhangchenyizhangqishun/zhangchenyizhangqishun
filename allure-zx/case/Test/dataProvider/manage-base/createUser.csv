@@ -1,0 +1,11 @@
+caseId,desc,isRun,account,password,userAccount,userName,userNo,sex,roleName,position,labelList,encryLevelCompany,encryLevelDept,imgId,expectedMessage
+1001,创建用户失败：账号不允许为空,True,test_huangfg,123456,"",random,random,True,RN79729543666,random,"['晶日','信息文控管理体系中心']",1,1,,参数错误：账号不允许为空
+1002,创建用户失败：账号不允许为空,True,test_huangfg,123456,random,"",random,False,RN79729543666,random,"['晶日','信息文控管理体系中心']",1,1,,参数错误：姓名不允许为空
+1003,创建用户成功：random代表随机,True,test_huangfg,123456,random,random,random,True,RN79729543666,random,"['晶日','信息文控管理体系中心']",1,1,,None
+1004,创建用户失败：编号不允许为空,True,test_huangfg,123456,random,random,"",False,RN79729543666,random,"['晶日','信息文控管理体系中心']",2,2,,参数错误：编号不允许为空
+1005,创建用户失败：职位不允许为空,True,test_huangfg,123456,random,random,random,True,RN79729543666,"","['晶日','信息文控管理体系中心']",2,2,,参数错误：职位不允许为空
+1006,创建用户失败：性别不允许为空,True,test_huangfg,123456,random,random,random,"",RN79729543666,random,"['晶日','信息文控管理体系中心']",1,1,,参数错误：性别不允许为空
+1007,创建用户失败：部门或者对应密保等级为空,True,test_huangfg,123456,random,random,random,False,RN79729543666,random,"['晶日','信息文控管理体系中心']",1,,,部门或者对应密保等级为空！
+1008,创建用户失败：资源库密保等级不允许为空,True,test_huangfg,123456,random,random,random,False,RN79729543666,random,"['晶日','信息文控管理体系中心']","",2,,参数错误：资源库密保等级不允许为空
+1009,创建用户失败：角色为空,True,test_huangfg,123456,random,random,random,False,"",random,"['晶日','信息文控管理体系中心']",1,2,,参数错误：角色不允许为空
+1009,创建用户失败：角色不存在（接口未做校验）,True,test_huangfg,123456,random,random,random,False,RNnotExist,random,"['晶日','信息文控管理体系中心']",1,2,,参数错误：角色不存在

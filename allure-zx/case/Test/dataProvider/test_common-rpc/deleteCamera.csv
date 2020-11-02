@@ -1,0 +1,6 @@
+caseId,desc,isRun,account,password,cameraId,poleId,projectId,expectedMessage
+1001,删除摄像头poleId不存在,True,test_hfg,888888,265,999999,999999,数字监控删除失败
+1002,删除摄像头poleId上已经有摄像头（cameraId不传代表新建）,True,test_hfg,888888,"",531,222,数字监控删除成功
+1003,删除摄像头cameraId不存在,True,test_hfg,888888,999999,552,208,数字监控删除失败
+1004,删除摄像头cameraId存在，与poleId不对应（270与531对应）,True,test_hfg,888888,270,489,7,数字监控删除失败
+1005,删除摄像头重复删除,True,test_hfg,888888,270,531,222,数字监控删除失败

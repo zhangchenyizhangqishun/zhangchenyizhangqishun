@@ -3,6 +3,7 @@
 '''
 Created on July 12, 2019
 @author: hzhuangfg
+di si ci tijiao
 '''
 import Config
 from com.util import gen_md5_sign
